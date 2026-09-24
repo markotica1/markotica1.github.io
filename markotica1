@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marko Tica | Operations & Program Leadership</title>
+<meta name="description" content="Marko Tica — operations and program leader with 7+ years at Uber leading Risk, Identity, Fraud, and Trust & Safety programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ee;--card:#fff;--ink:#1c2130;--muted:#5c5a52;--line:#ded8cb;--accent:#a9762f;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#14161d;--card:#1c1f28;--ink:#f1ede4;--muted:#a9a496;--line:#33353f;--accent:#d3a45c;--accent-ink:#14161d}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.08;margin:0;font-weight:600}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;gap:16px}
+nav b{font:600 19px "Fraunces",serif}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--accent)}
+section{padding:88px 0}
+h2{font-size:clamp(32px,5vw,46px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 40px}
+#home{padding:96px 0}
+#home .hero{display:grid;grid-template-columns:1.3fr .8fr;gap:56px;align-items:center}
+#home h1{font-size:clamp(42px,7.5vw,78px);font-weight:700;letter-spacing:-.01em}
+.role{font:600 clamp(20px,3.4vw,28px) "Fraunces",serif;color:var(--accent);margin:16px 0 8px;min-height:1.3em}
+.caret{display:inline-block;width:3px;height:.9em;background:var(--accent);margin-left:4px;vertical-align:-.1em;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+#home p{color:var(--muted);max-width:52ch;margin:0 0 32px}
+.headshot{position:relative;justify-self:center}
+.headshot .frame{width:min(280px,80vw);aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:3px solid var(--accent);background:var(--card)}
+.headshot img{width:100%;height:100%;object-fit:cover;display:block}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--accent);margin:0 10px 10px 0}
+.btn.fill{background:var(--accent);color:var(--accent-ink)}
+.btn:hover{opacity:.85}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.skill{margin-bottom:18px}
+.skill div{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:6px;transition:width 1s ease}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.facts div{border-top:3px solid var(--accent);padding-top:12px}
+.facts strong{display:block;font:600 42px "Fraunces",serif}
+.facts span{color:var(--muted);font-size:15px}
+.job{padding:0 0 28px 22px;border-left:2px solid var(--line);position:relative}
+.job:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.job h3{font-size:21px;font-weight:600}
+.job small{color:var(--muted);display:block;margin:4px 0 8px}
+.job ul{margin:0;padding-left:18px;color:var(--muted)}
+.col-title{font-size:24px;margin-bottom:24px;font-weight:600}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.proj .metric{padding:24px 20px 0;font:600 38px "Fraunces",serif;color:var(--accent)}
+.proj .body{padding:12px 20px 20px}
+.proj h3{font-size:19px;margin-bottom:8px;font-weight:600}
+.proj p{margin:0 0 12px;color:var(--muted);font-size:15.5px}
+.tags{font-size:14px;color:var(--accent);font-weight:500}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.contact-list span{display:block;color:var(--muted);font-size:14px}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.social a{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:99px;text-decoration:none;font-weight:500}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr;gap:40px}.facts{grid-template-columns:1fr 1fr}section{padding:64px 0}#home .hero{grid-template-columns:1fr;text-align:center}.headshot{order:-1}#home p{margin-left:auto;margin-right:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.caret{animation:none}.bar i{transition:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b id="navName"></b>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<main>
+<section id="home"><div class="wrap hero">
+  <div>
+    <h1 id="heroName"></h1>
+    <div class="role"><span id="typed"></span><span class="caret" aria-hidden="true"></span></div>
+    <p id="heroBlurb"></p>
+    <a class="btn fill" href="#projects">See my work</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+  <div class="headshot"><div class="frame"><img src="photo.jpg" alt="Portrait of Marko Tica" onerror="this.parentElement.style.display='none'"></div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p class="lead" id="aboutText"></p>
+  <div class="grid2">
+    <div id="skills"></div>
+    <ul class="contact-list" id="aboutFacts"></ul>
+  </div>
+  <div class="facts" id="counters"></div>
+</div></section>
+
+<section id="resume"><div class="wrap">
+  <h2>Resume</h2>
+  <p class="lead" id="resumeText"></p>
+  <div class="grid2">
+    <div><h3 class="col-title">Experience</h3><div id="experience"></div></div>
+    <div><h3 class="col-title">Education</h3><div id="education"></div></div>
+  </div>
+  <p style="margin-top:24px"><a class="btn fill" id="cvBtn" href="#">Download CV</a></p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Key programs</h2>
+  <p class="lead" id="projectsText"></p>
+  <div class="projects" id="projectList"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="lead" id="contactText"></p>
+  <div class="grid2">
+    <ul class="contact-list" id="contactList"></ul>
+    <div><h3 class="col-title">Find me online</h3><div class="social" id="social"></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap" id="footer"></div></footer>
+
+<script>
+/* ============================================================
+   EDIT ONLY THIS BLOCK. Save the file, then refresh the page.
+   Keep the quotes and commas exactly as they are.
+   To hide a section's item, delete its whole { ... }, line.
+   ============================================================ */
+const ME = {
+  name: "Marko Tica",
+  roles: ["Operations Leader", "Program Manager", "Risk & Identity"],
+  blurb: "I build operating models and cross-functional programs that hold up as organizations scale — with 7+ years leading Risk, Identity, Fraud, and Trust & Safety at Uber.",
+  about: "Operations and program leader with 7+ years at Uber leading global Risk, Identity, Fraud, and Trust & Safety programs across 150+ person organizations. I build operating models and cross-functional programs that scale through organizational change, with experience spanning fraud mitigation, identity, compliance, quality, and operational transformation. Along the way I've delivered $5.4M in annualized fraud deflection, led Lean Six Sigma certification for 200+ employees, and driven measurable gains in efficiency, quality, and throughput across global operations.",
+  facts: [
+    ["Location", "Phoenix, AZ"],
+    ["Education", "B.S. Political Science, Arizona State University"],
+    ["Languages", "English, Serbo-Croatian"],
+    ["Certification", "Lean Six Sigma Kaizen Yellow Belt"]
+  ],
+  skills: [
+    { name: "Program & Project Management", level: 95 },
+    { name: "Fraud Mitigation & Risk Operations", level: 95 },
+    { name: "Operating Model Design", level: 90 },
+    { name: "SQL & Tableau", level: 75 }
+  ],
+  counters: [
+    { n: 5.4, suffix: "M", label: "Annualized fraud deflection" },
+    { n: 150, suffix: "+", label: "Specialists led" },
+    { n: 200, suffix: "+", label: "Lean Six Sigma certified" },
+    { n: 7,   suffix: "+", label: "Years at Uber" }
+  ],
+  resumeText: "Seven-plus years at Uber, moving from frontline fraud investigation into leading the operating model for a $25M+ global program portfolio.",
+  experience: [
+    { role: "Senior Operations Manager, Fraud, Risk & Identity", place: "Uber, Phoenix, AZ", dates: "Sep 2023 to present",
+      points: [
+        "Owned operational strategy and delivery for the US&C Risk & Identity org, leading 12 Team Leads and 150+ Specialists.",
+        "Owned a $25M+ global program portfolio, scaling its impact 4X through operational redesign and disciplined execution.",
+        "Delivered $5.4M in annualized fraud deflection, a 700%+ increase with flat headcount.",
+        "Directed Uber's Lean Six Sigma Yellow Belt program, certifying ~200 employees and running Kaizen events.",
+        "Maintained 99% on-time delivery and 98%+ stakeholder satisfaction across 150+ global partners."
+      ] },
+    { role: "Sr. Operations Project Lead, Risk & Identity Compliance", place: "Uber, Phoenix, AZ", dates: "Apr 2022 to Sep 2023",
+      points: [
+        "Managed end-to-end delivery of cross-functional Risk & Identity programs, from requirements to execution priorities.",
+        "Coordinated teams across multiple Centers of Excellence and global locations, aligning resources and timelines.",
+        "Designed onboarding programs, SOPs, and operational controls that improved consistency and team readiness at scale.",
+        "Partnered directly with Senior Legal Counsel on high-sensitivity identity-theft claims."
+      ] },
+    { role: "Risk and Compliance Specialist II & III", place: "Uber, Phoenix, AZ", dates: "Feb 2019 to Apr 2022",
+      points: [
+        "Subject matter expert and escalation point across 300+ fraud investigation processes.",
+        "Ran concurrent operational workstreams weekly, including compliance reviews and partner fraud audits.",
+        "Surfaced process gaps through data analysis, improving workflows and documentation standards adopted team-wide."
+      ] }
+  ],
+  education: [
+    { role: "B.S. Political Science, Minor in Global Studies", place: "Arizona State University, Tempe, AZ", dates: "May 2020",
+      points: ["Graduated while working full-time in Uber's Trust & Safety organization."] },
+    { role: "Lean Six Sigma Kaizen Yellow Belt", place: "Certification", dates: "Uber",
+      points: ["Went on to lead the certification program for 200+ employees company-wide."] }
+  ],
+  cv: "Marko_Tica_Resume.pdf",
+  projectsText: "A few of the programs I've built or turned around, in the numbers that mattered.",
+  projects: [
+    { metric: "$5.4M", title: "Fraud deflection re-architecture",
+      text: "Redesigned the review process around the highest-ROI work, lifting annualized fraud deflection 700%+ with flat headcount.",
+      tags: "Fraud Mitigation · Process Redesign" },
+    { metric: "4X", title: "$25M+ program portfolio scale-up",
+      text: "Rebuilt the operating model for a $25M+ global program portfolio, scaling its impact through prioritization and disciplined execution.",
+      tags: "Operating Model Design · Program Management" },
+    { metric: "200+", title: "Lean Six Sigma certification program",
+      text: "Directed Uber's Yellow Belt program company-wide, certifying employees across multiple senior-director orgs and running Kaizen events on live business problems.",
+      tags: "Lean Six Sigma · Change Management" },
+    { metric: "100K+", title: "Women Rider Preference launch",
+      text: "Mobilized 20+ headcount to vet 100,000+ earners ahead of schedule, earning company-wide recognition for platform safety.",
+      tags: "Program Delivery · Trust & Safety" },
+    { metric: "98%", title: "Global offshoring transition",
+      text: "Led the global transition and offshoring readiness of identity-theft operations to a 98% quality-accuracy standard through scalable documentation, training, and coaching.",
+      tags: "Workforce Planning · QA Frameworks" }
+  ],
+  contactText: "Open to conversations about operations, program, and risk leadership roles.",
+  contact: [
+    ["Location", "Phoenix, AZ"],
+    ["Phone", "(530) 300-1342"],
+    ["Email", "Mtica23@outlook.com"]
+  ],
+  social: [
+    ["LinkedIn", "https://www.linkedin.com/in/markotica1/"]
+  ]
+};
+/* ===================== end of editable block ===================== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+document.title = ME.name + " | Portfolio";
+$("navName").textContent = ME.name;
+$("heroName").textContent = "Hi, I'm " + ME.name;
+$("heroBlurb").textContent = ME.blurb;
+$("aboutText").textContent = ME.about;
+$("resumeText").textContent = ME.resumeText;
+$("projectsText").textContent = ME.projectsText;
+$("contactText").textContent = ME.contactText;
+$("cvBtn").href = ME.cv;
+$("cvBtn").target = "_blank";
+$("footer").textContent = "© " + new Date().getFullYear() + " " + ME.name;
+
+$("aboutFacts").innerHTML = ME.facts.map(f => `<li><span>${esc(f[0])}</span>${esc(f[1])}</li>`).join("");
+$("contactList").innerHTML = ME.contact.map(f => `<li><span>${esc(f[0])}</span>${esc(f[1])}</li>`).join("");
+$("social").innerHTML = ME.social.map(s => `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join("");
+$("skills").innerHTML = ME.skills.map(s =>
+  `<div class="skill"><div><span>${esc(s.name)}</span><span>${s.level}%</span></div><div class="bar"><i data-w="${s.level}"></i></div></div>`).join("");
+$("counters").innerHTML = ME.counters.map(c =>
+  `<div><strong data-n="${c.n}" data-s="${esc(c.suffix)}">0${esc(c.suffix)}</strong><span>${esc(c.label)}</span></div>`).join("");
+
+const jobs = list => list.map(j =>
+  `<div class="job"><h3>${esc(j.role)}</h3><small>${esc(j.place)} · ${esc(j.dates)}</small><ul>${j.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>`).join("");
+$("experience").innerHTML = jobs(ME.experience);
+$("education").innerHTML = jobs(ME.education);
+
+$("projectList").innerHTML = ME.projects.map(p =>
+  `<article class="proj"><div class="metric">${esc(p.metric)}</div>
+   <div class="body"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><div class="tags">${esc(p.tags)}</div></div></article>`).join("");
+
+/* typing effect for roles */
+(function(){
+  const el = $("typed"), roles = ME.roles;
+  if (reduce || !roles.length) { el.textContent = roles.join(", "); return; }
+  let r = 0, i = 0, del = false;
+  (function tick(){
+    const word = roles[r];
+    el.textContent = word.slice(0, i);
+    if (!del && i === word.length) { del = true; return setTimeout(tick, 1400); }
+    if (del && i === 0) { del = false; r = (r + 1) % roles.length; }
+    i += del ? -1 : 1;
+    setTimeout(tick, del ? 45 : 90);
+  })();
+})();
+
+/* skill bars and number counters run once when scrolled into view */
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if (!e.isIntersecting) return;
+  const t = e.target; io.unobserve(t);
+  if (t.dataset.w) t.style.width = t.dataset.w + "%";
+  if (t.dataset.n) {
+    const end = +t.dataset.n, s = t.dataset.s, dec = !Number.isInteger(end), start = performance.now();
+    (function step(now){
+      const k = reduce ? 1 : Math.min((now - start) / 1200, 1);
+      const v = end * k;
+      t.textContent = (dec ? v.toFixed(1) : Math.round(v)) + s;
+      if (k < 1) requestAnimationFrame(step);
+    })(start);
+  }
+}), { threshold: .4 });
+document.querySelectorAll("[data-w],[data-n]").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
