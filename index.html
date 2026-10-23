@@ -170,7 +170,7 @@
   .car-count{font-family:var(--mono);text-align:right}
   .car-count b{display:block;font-size:clamp(54px,7vw,96px);font-weight:600;letter-spacing:-.06em;line-height:1;color:var(--ink)}
   .car-count span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .car-svg{width:100%;height:auto;max-height:46vh}
+  .car-svg{width:100%;height:auto;max-height:40vh}
   .car-svg text{font-family:var(--sans);font-size:15px;fill:var(--muted);font-weight:500}
   .car-svg text.yr{font-family:var(--mono);font-size:12px;fill:#9A968C}
   .car-svg .node{transition:fill .3s,r .3s}
@@ -276,11 +276,11 @@
         <div class="captions">
           <div class="cap-item" data-c="0"><div class="big">150+</div><h3>people in my organization</h3><p>Most recently, US &amp; Canada Risk &amp; Identity at Uber.</p></div>
           <div class="cap-item" data-c="1"><div class="big g">12</div><h3>Team Leads reporting to me</h3><p>Each running their own team, with me setting direction, standards, and the operating rhythm.</p></div>
-          <div class="cap-item" data-c="2"><div class="big">3</div><h3>functions, one operation</h3><p>Fraud mitigation, identity verification, and account integrity.</p></div>
+          <div class="cap-item" data-c="2"><div class="big">5</div><h3>functions, one operation</h3><p>Fraud mitigation, identity verification, compliance, Trust &amp; Safety, and quality assurance.</p></div>
         </div>
         <div class="phase-bar"><i><b></b></i><i><b></b></i><i><b></b></i></div>
       </div>
-      <svg class="org-svg" id="orgSvg" viewBox="0 0 1000 640" aria-label="Animated org chart: 150+ people organized under 12 Team Leads across 3 functions"></svg>
+      <svg class="org-svg" id="orgSvg" viewBox="0 0 1000 640" aria-label="Animated org chart: 150+ people organized under 12 Team Leads across 5 functions"></svg>
     </div>
   </div>
 </section>
@@ -383,7 +383,7 @@
   <div class="wrap">
     <div class="toolkit">
       <div class="rv"><h3>Operations</h3><div class="tags"><span>Program management</span><span>Operating model design</span><span>Workforce planning</span><span>Change management</span><span>Lean Six Sigma</span><span>Vendor / BPO management</span></div></div>
-      <div class="rv d1"><h3>Risk &amp; Trust</h3><div class="tags"><span>Fraud mitigation</span><span>Identity verification</span><span>Account integrity</span><span>Risk &amp; compliance</span><span>QA frameworks</span></div></div>
+      <div class="rv d1"><h3>Risk &amp; Trust</h3><div class="tags"><span>Fraud mitigation</span><span>Identity verification</span><span>Compliance</span><span>Trust &amp; Safety</span><span>QA frameworks</span></div></div>
       <div class="rv d2"><h3>Data &amp; Tools</h3><div class="tags"><span>SQL</span><span>Tableau</span><span>JIRA</span><span>Salesforce</span><span>STATA</span><span>Excel / Sheets</span><span>Generative AI</span></div></div>
     </div>
     <div class="creds rv">
@@ -460,17 +460,18 @@
     const linesG = mk('g', {}, svg), labelsG = mk('g', {}, svg), dotsG = mk('g', {}, svg);
     const groups = [], N = 150, TL = 12;
     // functional groups
-    const GX = [180, 500, 820], fnNames = ['Fraud mitigation', 'Identity verification', 'Account integrity'];
+    const GX = [100, 300, 500, 700, 900], fnNames = [['Fraud', 'mitigation'], ['Identity', 'verification'], ['Compliance', ''], ['Trust &', 'Safety'], ['Quality', 'assurance']];
+    const GSTART = [0, 3, 6, 8, 10], GSIZE = [3, 3, 2, 2, 2];
     const you = mk('g', {opacity: 0}, svg);
     mk('circle', {cx: 500, cy: 56, r: 16, fill: '#E0A94A'}, you);
     mk('text', {x: 530, y: 61, style: 'fill:#fff;font-size:14px'}, you).textContent = 'Marko · Sr. Ops Manager';
     fnNames.forEach((n, g) => {
       mk('path', {d: `M500 72 C500 110 ${GX[g]} 100 ${GX[g]} 140`, stroke: 'rgba(224,169,74,.6)', 'stroke-width': 1.5, fill: 'none', class: 'oline'}, linesG);
-      const t = mk('text', {x: GX[g], y: 618, 'text-anchor': 'middle', class: 'olabel'}, labelsG); t.textContent = n;
+      const t = mk('text', {x: GX[g], y: 596, 'text-anchor': 'middle', class: 'olabel'}, labelsG); n.forEach((w, k) => { const ts = mk('tspan', {x: GX[g], dy: k ? 18 : 0}, t); ts.textContent = w; });
     });
     // cluster layouts
     const clusterA = i => ({x: 95 + (i % 6) * 162, y: 210 + Math.floor(i / 6) * 230});            // 6x2 teams
-    const clusterB = i => { const g = Math.floor(i / 4), k = i % 4; return {x: GX[g] + (k % 2 ? 72 : -72), y: 245 + Math.floor(k / 2) * 190}; }; // 3 functions
+    const clusterB = i => { let g = 0; while (g < 4 && i >= GSTART[g + 1]) g++; const k = i - GSTART[g]; return {x: GX[g], y: (GSIZE[g] === 3 ? 200 : 270) + k * 140}; }; // 5 functions
     for (let t = 0; t < TL; t++) groups.push([]);
     const dots = [];
     for (let i = 0; i < N + TL; i++) {
@@ -551,8 +552,8 @@
     const STEPS = [
       {short: 'Brand Ambassador', when: '2016–17', tag: 'Where it started', title: 'Brand Ambassador (contract)', line: 'My first role with Uber, representing the brand as a contractor.'},
       {short: 'Specialist', when: '2019', tag: 'Promotion 1', title: 'Risk & Compliance Specialist', line: 'Hired full-time into Risk & Compliance, working fraud investigations.'},
-      {short: 'SME', when: '2019–22', tag: 'Promotion 2', title: 'Subject Matter Expert', line: 'Became the go-to expert and escalation point across 300+ fraud processes.'},
-      {short: 'Sr. Specialist', when: '2019–22', tag: 'Promotion 3', title: 'Senior Specialist', line: 'Started leading workstreams and people, not just cases.'},
+      {short: 'SME', when: '2020', tag: 'Promotion 2', title: 'Subject Matter Expert', line: 'Became the go-to expert and escalation point across 300+ fraud processes.'},
+      {short: 'Sr. Specialist', when: '2021', tag: 'Promotion 3', title: 'Senior Specialist', line: 'Started leading workstreams and people, not just cases.'},
       {short: 'Program Lead', when: '2022', tag: 'Promotion 4', title: 'Sr. Operations Project Lead, Risk & Identity', line: 'Moved from cases to programs: cross-functional delivery across global sites and Centers of Excellence.'},
       {short: 'Sr. Ops Manager', when: '2023', tag: 'Promotion 5', title: 'Senior Operations Manager, Fraud, Risk & Identity', line: 'Took over US & Canada Risk & Identity operations.'}
     ];
