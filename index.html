@@ -3,842 +3,614 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Marko Tica | Operations, Risk &amp; Program Leadership</title>
-<meta name="description" content="Marko Tica — operations and program leader with 7+ years at Uber leading Risk, Identity, Fraud, and Trust &amp; Safety programs. $5.4M annualized fraud deflection, 150+ person organizations, $25M+ program portfolio." />
-<meta property="og:title" content="Marko Tica | Operations, Risk &amp; Program Leadership" />
-<meta property="og:description" content="7+ years at Uber building the operating models that keep a global platform safe." />
+<title>Marko Tica | Operations Leader</title>
+<meta name="description" content="Marko Tica: operations leader in Fraud, Risk, Identity, and Trust &amp; Safety. Ten years and five promotions at Uber, most recently leading a 150+ person organization. Based in Phoenix, open to Arizona and California." />
+<meta property="og:title" content="Marko Tica | Operations Leader" />
+<meta property="og:description" content="Fraud, Risk, Identity, and Trust &amp; Safety operations. Most recently led a 150+ person organization at Uber." />
 <meta property="og:image" content="https://markotica1.github.io/photo.jpg" />
-<meta name="theme-color" content="#000000" />
+<meta name="theme-color" content="#0A1A2B" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --black:#000;
-    --ink:#0b0b0f;
-    --ink-2:#16161c;
-    --paper:#f5f5f7;
-    --white:#ffffff;
-    --text-dark:#1d1d1f;
-    --muted-dark:#6e6e73;
-    --muted-light:#a1a1a6;
-    --line-light:rgba(255,255,255,.12);
-    --line-dark:rgba(0,0,0,.08);
-    --blue:#2997ff;
-    --violet:#a78bfa;
-    --teal:#5eead4;
-    --pink:#f472b6;
-    --grad:linear-gradient(90deg,#5ac8fa 0%,#2997ff 35%,#a78bfa 70%,#f472b6 100%);
-    --radius:28px;
-    --ease:cubic-bezier(.2,.7,.1,1);
+    --navy:#0A1A2B; --navy-2:#10263D; --navy-3:#183450;
+    --paper:#F5F3EE; --paper-2:#ECE8DF; --white:#fff;
+    --ink:#111C27; --muted:#66707A; --muted-n:#8FA3B8;
+    --rule:#DCD6CA; --rule-n:rgba(255,255,255,.12);
+    --gold:#E0A94A; --green:#34C38F; --green-d:#1E8A62; --dot:#4C6784;
+    --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    --ease:cubic-bezier(.22,.7,.15,1);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{
-    font-family:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
-    background:var(--black);color:var(--white);
-    -webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden;
-  }
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{max-width:100%;display:block}
   a{color:inherit;text-decoration:none}
-  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-  .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .eyebrow{font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
-  .h-xl{font-size:clamp(44px,8vw,112px);font-weight:700;letter-spacing:-.045em;line-height:1}
-  .h-lg{font-size:clamp(36px,5.6vw,72px);font-weight:700;letter-spacing:-.035em;line-height:1.04}
-  .h-md{font-size:clamp(26px,3.4vw,40px);font-weight:700;letter-spacing:-.025em;line-height:1.1}
-  .lead{font-size:clamp(18px,2vw,22px);line-height:1.5;font-weight:400}
-  .muted-l{color:var(--muted-light)} .muted-d{color:var(--muted-dark)}
+  .wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+  h2.title{font-size:clamp(34px,5vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.02}
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+  .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 
-  /* ---------- Reveal ---------- */
-  .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
-  .reveal.in{opacity:1;transform:none}
-  .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-
-  /* ---------- Nav ---------- */
-  .nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
-  .nav.scrolled{background:rgba(10,10,14,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-color:var(--line-light)}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  /* progress + nav */
+  .progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--gold);z-index:70}
+  .nav{position:fixed;inset:0 0 auto;z-index:60;color:#fff;transition:background .3s,color .3s,border-color .3s;border-bottom:1px solid transparent}
+  .nav.light{background:rgba(245,243,238,.92);color:var(--ink);border-color:var(--rule);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .nav.dark{background:rgba(10,26,43,.85);border-color:var(--rule-n);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
   .brand{font-weight:700;letter-spacing:-.02em;font-size:17px}
-  .nav ul{display:flex;gap:28px;list-style:none;font-size:13px;color:#d2d2d7}
-  .nav ul a{transition:color .2s}.nav ul a:hover,.nav ul a.active{color:#fff}
-  .nav-cta{font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--blue);color:#fff;transition:transform .2s,background .2s}
-  .nav-cta:hover{background:#0077ed;transform:scale(1.04)}
-  @media (max-width:820px){.nav ul{display:none}}
+  .nav ul{display:flex;gap:26px;list-style:none;font-size:13px}
+  .nav ul a{opacity:.65;transition:opacity .2s}.nav ul a:hover,.nav ul a.active{opacity:1}
+  .nav .btn-s{font-size:13px;font-weight:600;padding:7px 15px;border:1px solid currentColor;border-radius:999px;transition:all .2s}
+  .nav .btn-s:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+  @media (max-width:860px){.nav ul{display:none}}
 
-  /* ---------- Hero ---------- */
-  .hero{position:relative;min-height:100vh;display:grid;place-items:center;overflow:hidden;padding:110px 0 60px}
-  .hero-bg{position:absolute;inset:-20%;z-index:0;filter:blur(80px);opacity:.55;pointer-events:none}
-  .blob{position:absolute;border-radius:50%;mix-blend-mode:screen;animation:float 18s ease-in-out infinite}
-  .b1{width:46vw;height:46vw;left:10%;top:15%;background:#1e40af}
-  .b2{width:38vw;height:38vw;right:8%;top:25%;background:#6d28d9;animation-delay:-6s}
-  .b3{width:30vw;height:30vw;left:35%;bottom:5%;background:#0e7490;animation-delay:-12s}
-  @keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(4vw,-3vw) scale(1.08)}66%{transform:translate(-3vw,3vw) scale(.95)}}
-  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .9fr;gap:60px;align-items:center}
-  .badge{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;padding:8px 14px;border:1px solid var(--line-light);border-radius:999px;background:rgba(255,255,255,.05);backdrop-filter:blur(10px);margin-bottom:28px}
-  .pulse{width:8px;height:8px;border-radius:50%;background:#30d158;box-shadow:0 0 0 0 rgba(48,209,88,.6);animation:pulse 2s infinite}
-  @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(48,209,88,0)}100%{box-shadow:0 0 0 0 rgba(48,209,88,0)}}
-  .hero h1{margin-bottom:22px}
-  .hero .lead{max-width:560px;color:#c7c7cc;margin-bottom:36px}
-  .btns{display:flex;gap:14px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
-  .btn:hover{transform:translateY(-2px) scale(1.02)}
-  .btn-primary{background:#fff;color:#000}
-  .btn-primary:hover{box-shadow:0 10px 40px rgba(255,255,255,.25)}
-  .btn-ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
-  .btn-ghost:hover{background:rgba(255,255,255,.08)}
-  .btn-blue{background:var(--blue);color:#fff}
-  .btn-blue:hover{background:#0077ed;box-shadow:0 10px 40px rgba(41,151,255,.35)}
-  .btn-dark{background:var(--text-dark);color:#fff}
-  .portrait{position:relative;aspect-ratio:4/5;border-radius:36px;overflow:hidden;will-change:transform;box-shadow:0 40px 120px rgba(41,151,255,.25),0 0 0 1px rgba(255,255,255,.08)}
-  .portrait img{width:100%;height:100%;object-fit:cover;transform:scale(1.05)}
-  .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.65))}
-  .portrait .tag{position:absolute;left:20px;bottom:18px;z-index:2;font-size:13px;color:#e5e5ea}
-  .portrait .tag b{display:block;font-size:17px;color:#fff}
-  .ph-fallback{position:absolute;inset:0;display:grid;place-items:center;font-size:88px;font-weight:700;background:linear-gradient(135deg,#1e3a8a,#5b21b6);letter-spacing:-.04em}
-  .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;font-size:12px;color:var(--muted-light);display:flex;flex-direction:column;align-items:center;gap:8px;letter-spacing:.12em;text-transform:uppercase}
-  .scroll-cue span{width:1px;height:38px;background:linear-gradient(#fff,transparent);animation:cue 2s infinite}
-  @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px;text-align:left}.portrait{max-width:380px}}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,background .2s,color .2s,border-color .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--navy)}
+  .btn-gold:hover{background:#F0BC5E}
+  .btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}
+  .btn-line:hover{border-color:#fff}
 
-  /* ---------- Pinned statement ---------- */
-  .pin{position:relative}
-  .pin-stage{position:sticky;top:0;height:100vh;display:grid;place-items:center;overflow:hidden}
-  .statement{height:260vh;background:var(--black)}
-  .statement p{font-size:clamp(30px,5vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.12;max-width:1000px}
-  .statement .w{color:#2a2a2e;transition:color .35s}
-  .statement .w.on{color:#f5f5f7}
-  .statement .w.hl.on{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  /* ============ HERO ============ */
+  .hero{background:var(--navy);color:#fff;min-height:100vh;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:110px 0 80px}
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.3fr .8fr;gap:70px;align-items:center}
+  .hero .meta{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-n);display:flex;gap:18px;flex-wrap:wrap;margin-bottom:28px}
+  .hero .meta i{font-style:normal;color:var(--green)}
+  .hero h1{font-size:clamp(60px,10vw,140px);font-weight:700;letter-spacing:-.055em;line-height:.9}
+  .hero h1 span{color:var(--gold)}
+  .hero p.pos{font-size:clamp(19px,2.1vw,24px);color:#C9D5E1;max-width:600px;margin:30px 0 38px;line-height:1.45}
+  .hero p.pos b{color:#fff;font-weight:600}
+  .hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .portrait{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:var(--navy-3);border:1px solid var(--rule-n);will-change:transform}
+  .portrait img{width:100%;height:100%;object-fit:cover}
+  .portrait .fb{position:absolute;inset:0;display:grid;place-items:center;font-size:80px;font-weight:700;color:var(--gold);letter-spacing:-.04em}
+  .portrait .cap{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(10,26,43,.9));font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#C9D5E1}
+  .cue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted-n);text-transform:uppercase}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px}.portrait{max-width:340px}}
 
-  /* ---------- Pinned stats sequence ---------- */
-  .stats-seq{height:520vh;background:radial-gradient(ellipse at center,#0f1530 0%,#000 70%)}
-  .seq-wrap{position:relative;width:100%;height:100%;display:grid;place-items:center}
-  .seq-item{position:absolute;text-align:center;padding:0 20px;opacity:0;transform:scale(.88) translateY(30px);filter:blur(10px);transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease)}
-  .seq-item.active{opacity:1;transform:none;filter:none}
-  .seq-item.past{opacity:0;transform:scale(1.12) translateY(-30px);filter:blur(10px)}
-  .seq-num{font-size:clamp(84px,17vw,230px);font-weight:800;letter-spacing:-.06em;line-height:.95}
-  .seq-label{font-size:clamp(20px,2.6vw,32px);font-weight:600;letter-spacing:-.02em;margin-top:18px}
-  .seq-sub{font-size:clamp(15px,1.5vw,18px);color:var(--muted-light);margin-top:10px;max-width:560px;margin-inline:auto}
-  .seq-dots{position:absolute;right:28px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px}
-  .seq-dots i{width:6px;height:6px;border-radius:50%;background:#3a3a3f;transition:all .4s}
-  .seq-dots i.on{background:#fff;height:22px;border-radius:4px}
-  .seq-progress{position:absolute;left:0;bottom:0;height:2px;background:var(--grad);width:0}
+  /* ============ PINNED SCENES ============ */
+  .scene{position:relative;background:var(--navy);color:#fff}
+  .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center}
+  .stage .wrap{height:100%;display:grid;align-items:center;padding-top:58px}
 
-  /* ---------- Light sections ---------- */
-  .light{background:var(--paper);color:var(--text-dark)}
-  .white{background:var(--white);color:var(--text-dark)}
-  .section{padding:clamp(90px,12vw,160px) 0}
-  .sec-head{max-width:820px;margin-bottom:64px}
-  .sec-head .eyebrow{margin-bottom:16px}
-  .sec-head p{margin-top:20px}
+  /* Org scene */
+  #org{height:340vh}
+  .org-grid{grid-template-columns:.75fr 1.25fr;gap:40px}
+  .captions{position:relative;min-height:280px}
+  .cap-item{position:absolute;inset:0;opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .cap-item.on{opacity:1;transform:none}
+  .cap-item .big{font-family:var(--mono);font-size:clamp(72px,10vw,140px);font-weight:600;letter-spacing:-.06em;line-height:1;color:#fff}
+  .cap-item .big.g{color:var(--gold)}
+  .cap-item h3{font-size:clamp(22px,2.4vw,30px);font-weight:600;letter-spacing:-.02em;margin:14px 0 10px}
+  .cap-item p{color:var(--muted-n);font-size:16px;max-width:400px}
+  .org-svg{width:100%;height:auto;max-height:78vh}
+  .org-svg text{font-family:var(--mono);font-size:13px;fill:var(--muted-n);letter-spacing:.06em;text-transform:uppercase}
+  .phase-bar{display:flex;gap:6px;margin-top:26px}
+  .phase-bar i{flex:1;height:3px;background:var(--rule-n);position:relative;overflow:hidden;max-width:80px}
+  .phase-bar i b{position:absolute;inset:0;background:var(--gold);transform-origin:left;transform:scaleX(0)}
 
-  /* ---------- Bento / metrics ---------- */
-  .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
-  .tile{background:var(--white);border-radius:var(--radius);padding:34px;position:relative;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .tile:hover{transform:translateY(-4px);box-shadow:0 30px 60px rgba(0,0,0,.08)}
-  .tile.dark{background:var(--ink);color:#fff}
-  .t-2{grid-column:span 2}.t-3{grid-column:span 3}.t-4{grid-column:span 4}.t-6{grid-column:span 6}
-  @media (max-width:900px){.t-2,.t-3,.t-4{grid-column:span 6}}
-  @media (min-width:600px) and (max-width:900px){.t-2{grid-column:span 3}}
-  .tile h3{font-size:15px;font-weight:600;color:var(--muted-dark);margin-bottom:10px}
-  .tile.dark h3{color:var(--muted-light)}
-  .big{font-size:clamp(48px,6vw,80px);font-weight:800;letter-spacing:-.05em;line-height:1}
-  .tile p.cap{margin-top:12px;font-size:16px;color:var(--muted-dark)}
-  .tile.dark p.cap{color:var(--muted-light)}
+  /* Results scene */
+  #results{height:620vh;background:var(--navy-2)}
+  .res-grid{grid-template-columns:.8fr 1.2fr;gap:56px}
+  .res-text{position:relative;min-height:340px}
+  .res-item{position:absolute;inset:0;opacity:0;transform:translateY(24px);transition:opacity .55s var(--ease),transform .55s var(--ease);pointer-events:none}
+  .res-item.on{opacity:1;transform:none}
+  .res-item .step{font-family:var(--mono);font-size:12px;color:var(--muted-n);letter-spacing:.1em;margin-bottom:14px}
+  .res-item h3{font-size:clamp(28px,3.4vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin:10px 0 16px}
+  .res-item p{color:#C3D0DC;font-size:17px;max-width:460px}
+  .res-nav{display:flex;gap:8px;margin-top:30px;position:absolute;bottom:-60px;left:0}
+  .res-nav i{width:28px;height:3px;background:var(--rule-n);transition:background .3s,width .3s}
+  .res-nav i.on{background:var(--gold);width:48px}
+  .res-charts{position:relative;height:min(520px,62vh)}
+  .rc{position:absolute;inset:0;background:var(--navy);border:1px solid var(--rule-n);border-radius:18px;padding:30px;display:flex;flex-direction:column;opacity:0;transform:scale(.97);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+  .rc.on{opacity:1;transform:none}
+  .rc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--rule-n);margin-bottom:22px}
+  .rc-num{font-family:var(--mono);font-size:clamp(40px,5vw,64px);font-weight:600;letter-spacing:-.05em;line-height:1}
+  .rc-lbl{font-size:13px;color:var(--muted-n);margin-top:6px}
+  .rc-meta{font-family:var(--mono);font-size:11px;color:var(--muted-n);letter-spacing:.08em;text-transform:uppercase;text-align:right}
+  .rc-body{flex:1;position:relative;min-height:0}
+  .rc-foot{font-size:12px;color:var(--muted-n);margin-top:14px}
+  /* vertical bars */
+  .vbars{display:flex;align-items:flex-end;justify-content:center;gap:12%;height:100%;padding-bottom:28px;border-bottom:1px solid var(--rule-n);position:relative}
+  .vb{width:26%;max-width:140px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+  .vb .bar{width:100%;border-radius:8px 8px 2px 2px;background:var(--dot)}
+  .vb .bar.g{background:linear-gradient(180deg,var(--green),var(--green-d))}
+  .vb .v{font-family:var(--mono);font-weight:600;font-size:18px;margin-bottom:8px}
+  .vb .l{position:absolute;bottom:-26px;font-size:12px;color:var(--muted-n);white-space:nowrap}
+  /* h bars */
+  .hbars{display:grid;gap:20px;align-content:center;height:100%}
+  .hb .hl{display:flex;justify-content:space-between;font-size:14px;margin-bottom:7px;color:#C3D0DC}
+  .hb .hl b{font-family:var(--mono);color:#fff}
+  .hb .tr{height:30px;background:rgba(255,255,255,.06);border-radius:6px;overflow:hidden}
+  .hb .fl{height:100%;background:var(--dot);border-radius:6px;width:0}
+  .hb .fl.g{background:var(--green)}
+  /* waffle */
+  .waffle{display:grid;gap:4px;align-content:center;height:100%}
+  .waffle i{aspect-ratio:1;border-radius:2px;background:rgba(255,255,255,.07);transition:background .15s}
+  .waffle i.on{background:var(--green)}
+  .waffle.gold i.on{background:var(--gold)}
+  .chips{display:grid;gap:6px;margin-top:18px}
+  .chips span{font-family:var(--mono);font-size:12px;text-align:center;padding:10px 4px;border-radius:6px;background:rgba(255,255,255,.06);color:var(--muted-n);transition:all .3s}
+  .chips span.on{background:var(--green);color:var(--navy);font-weight:600}
+  .chips.gold span.on{background:var(--gold)}
+  .bullet-wrap{display:flex;flex-direction:column;justify-content:center;height:100%}
+  .bullet{position:relative;height:70px;border-radius:6px;overflow:hidden;background:linear-gradient(90deg,rgba(255,255,255,.04) 0 50%,rgba(255,255,255,.08) 50% 75%,rgba(255,255,255,.12) 75% 100%)}
+  .bullet .fl{position:absolute;left:0;top:22px;height:26px;background:var(--green);border-radius:0 4px 4px 0;width:0}
+  .bullet .std{position:absolute;top:8px;bottom:8px;width:4px;background:var(--gold);left:90%;border-radius:2px}
+  .axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted-n);margin-top:8px}
 
-  /* bar chart */
-  .chart{display:flex;align-items:flex-end;gap:28px;height:240px;margin-top:30px;padding-bottom:34px;position:relative;border-bottom:1px solid var(--line-light)}
-  .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
-  .bar{width:100%;max-width:120px;border-radius:14px 14px 4px 4px;height:0;transition:height 1.6s var(--ease)}
-  .bar.before{background:#3a3a40}
-  .bar.after{background:var(--grad)}
-  .bar-val{font-weight:700;font-size:18px;margin-bottom:10px;opacity:0;transition:opacity .6s 1s}
-  .in .bar-val{opacity:1}
-  .bar-lbl{position:absolute;bottom:-30px;font-size:13px;color:var(--muted-light);white-space:nowrap}
-  .flatline{position:absolute;left:0;right:0;bottom:22%;border-top:2px dashed var(--teal);opacity:0;transition:opacity .8s 1.4s}
-  .in .flatline{opacity:.9}
-  .flatline span{position:absolute;left:0;top:-24px;font-size:12px;color:var(--teal);font-weight:600}
-  .legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:13px;color:var(--muted-light)}
-  .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-
-  /* rings */
-  .rings{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-  .ring{text-align:center}
-  .ring svg{width:100%;max-width:130px;transform:rotate(-90deg)}
-  .ring .track{stroke:#e8e8ed}
-  .ring .val{stroke:url(#rg);stroke-linecap:round;transition:stroke-dashoffset 1.8s var(--ease)}
-  .ring-wrap{position:relative;display:inline-block;width:100%;max-width:130px}
-  .ring-num{position:absolute;inset:0;display:grid;place-items:center;font-weight:800;font-size:clamp(20px,2.4vw,28px);letter-spacing:-.03em}
-  .ring small{display:block;font-size:13px;color:var(--muted-dark);margin-top:8px;line-height:1.3}
-
-  /* 4x bars */
-  .hbars{margin-top:26px;display:grid;gap:14px}
-  .hbar{display:grid;grid-template-columns:70px 1fr;align-items:center;gap:12px;font-size:13px;color:var(--muted-dark)}
-  .hbar .track{height:30px;border-radius:9px;background:#efeff4;overflow:hidden}
-  .hbar .fill{height:100%;width:0;border-radius:9px;transition:width 1.6s var(--ease);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-weight:700;font-size:13px}
-  .hbar .fill.a{background:#c7c7cc}
-  .hbar .fill.b{background:var(--grad)}
-
-  /* people dots */
-  .dots{display:grid;grid-template-columns:repeat(20,1fr);gap:5px;margin-top:22px}
-  .dots i{aspect-ratio:1;border-radius:50%;background:#2c2c32;transform:scale(0);transition:transform .4s var(--ease),background .4s}
-  .in .dots i{transform:scale(1)}
-  .dots i.lead{background:var(--blue)}
-
-  /* ---------- Case studies ---------- */
-  .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .case{position:relative;border-radius:var(--radius);overflow:hidden;min-height:420px;padding:38px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-align:left;cursor:pointer;isolation:isolate;transition:transform .6s var(--ease)}
-  .case:hover{transform:scale(1.015)}
-  .case::before{content:"";position:absolute;inset:0;z-index:-1;transition:transform 1.2s var(--ease)}
-  .case:hover::before{transform:scale(1.08)}
-  .case.c1::before{background:radial-gradient(circle at 80% 20%,#3b82f6 0%,transparent 55%),radial-gradient(circle at 10% 90%,#7c3aed 0%,transparent 55%),#0b0b14}
-  .case.c2::before{background:radial-gradient(circle at 20% 20%,#ec4899 0%,transparent 50%),radial-gradient(circle at 90% 80%,#8b5cf6 0%,transparent 55%),#140b14}
-  .case.c3::before{background:radial-gradient(circle at 85% 85%,#14b8a6 0%,transparent 55%),radial-gradient(circle at 10% 10%,#0ea5e9 0%,transparent 50%),#071214}
-  .case.c4::before{background:radial-gradient(circle at 15% 85%,#f59e0b 0%,transparent 50%),radial-gradient(circle at 85% 15%,#ef4444 0%,transparent 50%),#140c07}
-  .case.c5{grid-column:span 2;min-height:340px}
-  .case.c5::before{background:radial-gradient(circle at 50% 120%,#2997ff 0%,transparent 60%),linear-gradient(135deg,#0b0b0f,#1c1c24)}
-  @media (max-width:820px){.cases{grid-template-columns:1fr}.case.c5{grid-column:auto}}
-  .case .kicker{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
-  .case h3{font-size:clamp(26px,3vw,36px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-top:10px;max-width:440px}
-  .case .metric{font-size:clamp(56px,7vw,96px);font-weight:800;letter-spacing:-.05em;line-height:1}
-  .case .mcap{font-size:16px;opacity:.8;margin-top:6px}
-  .case .more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:600;font-size:15px;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);width:max-content;transition:background .3s}
-  .case:hover .more{background:rgba(255,255,255,.26)}
-  .plus{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#fff;color:#000;font-size:15px;line-height:1}
-
-  /* modal */
-  .modal{position:fixed;inset:0;z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;background:rgba(0,0,0,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-  .modal.open{display:flex}
-  .sheet{background:#fff;color:var(--text-dark);border-radius:32px;max-width:860px;width:100%;overflow:hidden;animation:sheetIn .6s var(--ease)}
-  @keyframes sheetIn{from{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:none}}
-  .sheet-hero{padding:56px 48px 44px;color:#fff;position:relative}
-  .sheet-hero .kicker{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
-  .sheet-hero h3{font-size:clamp(30px,4vw,48px);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin-top:12px}
-  .close{position:absolute;top:20px;right:20px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:22px;display:grid;place-items:center;transition:background .2s}
-  .close:hover{background:rgba(255,255,255,.32)}
-  .sheet-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line-dark);border-bottom:1px solid var(--line-dark)}
-  .sheet-kpis div{background:#fff;padding:26px 28px}
-  .sheet-kpis b{display:block;font-size:34px;font-weight:800;letter-spacing:-.04em}
-  .sheet-kpis span{font-size:14px;color:var(--muted-dark)}
-  .sheet-body{padding:40px 48px 52px;display:grid;gap:30px}
-  .sheet-body h4{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
-  .sheet-body p,.sheet-body li{font-size:17px;line-height:1.6;color:#3a3a3c}
-  .sheet-body ul{padding-left:20px;display:grid;gap:8px}
-  @media (max-width:600px){.sheet-hero,.sheet-body{padding-left:26px;padding-right:26px}}
-
-  /* ---------- Timeline ---------- */
-  .tl-section{background:var(--ink);color:#fff}
-  .tl-track{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:20px 0 50px}
-  .tl-track::before{content:"";position:absolute;left:0;right:0;top:19px;height:2px;background:#2a2a30}
-  .tl-fill{position:absolute;left:0;top:19px;height:2px;background:var(--grad);width:0;transition:width .8s var(--ease)}
-  .tl-node{position:relative;text-align:left;padding-top:48px;color:var(--muted-light);transition:color .3s}
-  .tl-node::before{content:"";position:absolute;top:10px;left:0;width:20px;height:20px;border-radius:50%;background:var(--ink);border:2px solid #3a3a40;transition:all .4s var(--ease)}
-  .tl-node:hover{color:#fff}
-  .tl-node.active{color:#fff}
-  .tl-node.active::before,.tl-node.done::before{border-color:var(--blue);background:var(--blue);box-shadow:0 0 0 6px rgba(41,151,255,.18)}
-  .tl-node .yr{display:block;font-size:22px;font-weight:700;letter-spacing:-.02em}
-  .tl-node .rl{display:block;font-size:13px;margin-top:4px;line-height:1.35}
-  .tl-panel{display:grid;grid-template-columns:1fr 1.3fr;gap:50px;background:var(--ink-2);border:1px solid var(--line-light);border-radius:var(--radius);padding:48px;min-height:340px}
-  .tl-panel .when{font-size:14px;color:var(--blue);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-  .tl-panel h3{font-size:clamp(28px,3.4vw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin:10px 0 14px}
-  .tl-panel .org{color:var(--muted-light);font-size:16px}
-  .tl-panel ul{list-style:none;display:grid;gap:14px}
-  .tl-panel li{position:relative;padding-left:26px;font-size:17px;line-height:1.55;color:#d1d1d6}
-  .tl-panel li::before{content:"";position:absolute;left:0;top:10px;width:10px;height:10px;border-radius:3px;background:var(--grad)}
-  .tl-anim{animation:tlIn .6s var(--ease)}
-  @keyframes tlIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-  .tl-hint{font-size:14px;color:var(--muted-light);margin-top:18px}
-  @media (max-width:820px){
-    .tl-track{grid-template-columns:repeat(6,minmax(120px,1fr));overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
-    .tl-node{scroll-snap-align:start}
-    .tl-panel{grid-template-columns:1fr;padding:30px;gap:24px}
+  @media (max-width:900px){
+    .org-grid,.res-grid{grid-template-columns:1fr;gap:10px;align-content:center}
+    .captions{min-height:200px}
+    .cap-item .big{font-size:64px}
+    .cap-item p{font-size:14px}
+    .org-svg{max-height:46vh}
+    .res-text{min-height:210px}
+    .res-item h3{font-size:26px;margin:6px 0 8px}
+    .res-item p{font-size:14px}
+    .res-nav{display:none}
+    .res-charts{height:48vh}
+    .rc{padding:18px}
+    .rc-head{padding-bottom:12px;margin-bottom:14px}
+    .waffle{gap:3px}
   }
 
-  /* ---------- Principles ---------- */
-  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .pr{padding:38px;border-radius:var(--radius);background:var(--paper)}
-  .pr .n{font-size:15px;font-weight:700;color:var(--blue)}
-  .pr h3{font-size:24px;font-weight:700;letter-spacing:-.02em;margin:14px 0 10px;line-height:1.2}
-  .pr p{color:var(--muted-dark);font-size:16px}
-  @media (max-width:900px){.principles{grid-template-columns:1fr}}
+  /* Career scene */
+  #career{height:380vh;background:var(--paper);color:var(--ink)}
+  .car-grid{grid-template-rows:auto 1fr auto;align-content:center;gap:24px}
+  .car-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+  .car-top p{color:var(--muted);font-size:17px;max-width:460px}
+  .car-count{font-family:var(--mono);text-align:right}
+  .car-count b{display:block;font-size:clamp(54px,7vw,96px);font-weight:600;letter-spacing:-.06em;line-height:1;color:var(--ink)}
+  .car-count span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .car-svg{width:100%;height:auto;max-height:46vh}
+  .car-svg text{font-family:var(--sans);font-size:15px;fill:var(--muted);font-weight:500}
+  .car-svg text.yr{font-family:var(--mono);font-size:12px;fill:#9A968C}
+  .car-svg .node{transition:fill .3s,r .3s}
+  .car-card{display:grid;grid-template-columns:200px 1fr;gap:30px;align-items:baseline;border-top:2px solid var(--ink);padding-top:20px;min-height:92px}
+  .car-card .when{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--gold);text-transform:uppercase}
+  .car-card h3{font-size:clamp(22px,2.6vw,32px);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  .car-card p{color:var(--muted);font-size:16px;margin-top:6px}
+  .car-card .swap{animation:sw .45s var(--ease)}
+  @keyframes sw{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media (max-width:800px){.car-card{grid-template-columns:1fr;gap:6px}.car-top p{font-size:15px}.car-svg text{display:none}.car-svg{max-height:34vh}.car-svg .node{stroke-width:5}}
 
-  /* ---------- Capabilities ---------- */
-  .caps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
-  .caps h3{font-size:15px;font-weight:600;color:var(--muted-dark);margin-bottom:16px;letter-spacing:.02em}
-  .chips{display:flex;flex-wrap:wrap;gap:10px}
-  .chip{padding:10px 16px;border-radius:999px;background:#fff;border:1px solid var(--line-dark);font-size:15px;font-weight:500;transition:all .3s var(--ease)}
-  .chip:hover{background:var(--text-dark);color:#fff;transform:translateY(-2px)}
-  @media (max-width:900px){.caps{grid-template-columns:1fr;gap:32px}}
-  .edu{margin-top:70px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .edu div{background:#fff;border-radius:22px;padding:28px}
-  .edu b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:4px}
-  .edu span{color:var(--muted-dark);font-size:15px}
-  @media (max-width:900px){.edu{grid-template-columns:1fr}}
+  /* ============ STATIC SECTIONS ============ */
+  .sec{padding:clamp(90px,11vw,140px) 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+  .sec-head p{color:var(--muted);font-size:18px;max-width:460px}
+  .approach{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .ap{background:var(--white);border:1px solid var(--rule);border-radius:18px;padding:34px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .ap:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(17,28,39,.07)}
+  .ap .n{font-family:var(--mono);font-size:12px;color:var(--gold);letter-spacing:.1em}
+  .ap h3{font-size:24px;font-weight:700;letter-spacing:-.02em;margin:12px 0 10px}
+  .ap p{color:var(--muted);font-size:16px}
+  .ap.wide{grid-column:span 2;background:var(--ink);color:#fff;border-color:var(--ink);display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:center}
+  .ap.wide p{color:#AEBBC8}
+  .formula{font-family:var(--mono);background:rgba(255,255,255,.05);border:1px solid var(--rule-n);border-radius:12px;padding:24px;font-size:clamp(14px,1.5vw,17px);line-height:1.9}
+  .formula .eq{color:var(--gold);font-weight:600}
+  .formula small{display:block;color:var(--muted-n);font-size:12px;margin-top:10px;line-height:1.5}
+  @media (max-width:860px){.approach{grid-template-columns:1fr}.ap.wide{grid-column:auto;grid-template-columns:1fr;gap:24px}}
 
-  /* ---------- CTA / Contact ---------- */
-  .cta{position:relative;overflow:hidden;text-align:center;padding:clamp(110px,14vw,180px) 0;background:#000}
-  .cta .glow{position:absolute;width:900px;height:900px;left:50%;top:50%;transform:translate(-50%,-30%);background:radial-gradient(circle,rgba(41,151,255,.35),rgba(167,139,250,.15) 40%,transparent 70%);pointer-events:none}
-  .cta .wrap{position:relative}
-  .cta p.lead{max-width:640px;margin:24px auto 40px;color:#c7c7cc}
-  .cta .btns{justify-content:center}
-  .contact-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:56px}
-  .contact-card{display:flex;align-items:center;gap:12px;padding:16px 22px;border-radius:18px;border:1px solid var(--line-light);background:rgba(255,255,255,.04);font-size:15px;transition:all .3s var(--ease)}
-  .contact-card:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
-  .contact-card svg{width:20px;height:20px;flex:none}
-  footer{background:#000;color:#6e6e73;font-size:13px;padding:30px 0;border-top:1px solid #1d1d1f}
+  .toolkit{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;border-top:2px solid var(--ink);padding-top:30px}
+  .toolkit h3{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:16px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{padding:8px 14px;border-radius:999px;border:1px solid var(--rule);background:var(--white);font-size:14px;font-weight:500;transition:all .25s}
+  .tags span:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .creds{display:flex;gap:40px;flex-wrap:wrap;margin-top:50px;padding-top:26px;border-top:1px solid var(--rule);font-size:15px}
+  .creds div small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  @media (max-width:860px){.toolkit{grid-template-columns:1fr;gap:28px}}
+
+  .contact{background:var(--navy);color:#fff}
+  .contact .sec-head p{color:var(--muted-n)}
+  .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  .locs{border-top:1px solid var(--rule-n)}
+  .locs div{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--rule-n);font-size:18px}
+  .locs span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-n)}
+  .locs span.home{color:var(--green)}
+  .links{display:grid;gap:12px}
+  .links a{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border:1px solid var(--rule-n);border-radius:14px;transition:all .25s}
+  .links a:hover{border-color:var(--gold);background:var(--navy-2)}
+  .links small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-n);margin-bottom:3px}
+  .links b{font-weight:500;font-size:17px}
+  .links .arr{color:var(--gold)}
+  @media (max-width:860px){.ct-grid{grid-template-columns:1fr;gap:40px}}
+  footer{background:var(--navy);color:var(--muted-n);font-family:var(--mono);font-size:12px;border-top:1px solid var(--rule-n);padding:24px 0}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
-  /* ---------- Reduced motion ---------- */
-  @media (prefers-reduced-motion:reduce){
-    *,*::before,*::after{animation:none!important;transition:none!important}
-    .reveal{opacity:1;transform:none}
-    .statement{height:auto}.statement .pin-stage{position:relative;height:auto;padding:120px 0}
-    .statement .w{color:#f5f5f7}
-  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
-<!-- ================= NAV ================= -->
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a href="#top" class="brand">Marko Tica</a>
+    <a class="brand" href="#top">Marko Tica</a>
     <ul>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#work">Case Studies</a></li>
-      <li><a href="#journey">Journey</a></li>
-      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#org">Leadership</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#approach">Approach</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="Marko_Tica_Resume.pdf" download>Resume</a>
+    <a class="btn-s" href="Marko_Tica_Resume.pdf" download>Resume ↓</a>
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<header class="hero" id="top">
-  <div class="hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-theme="dark">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <div class="badge reveal"><span class="pulse"></span>Open to senior operations &amp; program leadership roles</div>
-      <h1 class="h-xl reveal d1">Operations,<br><span class="grad-text">engineered</span><br>for scale.</h1>
-      <p class="lead reveal d2">I'm Marko — an operations and program leader with 7+ years at Uber building the Risk, Identity, Fraud, and Trust &amp; Safety programs that protect a global platform, and the 150+ person teams that run them.</p>
-      <div class="btns reveal d3">
-        <a href="#work" class="btn btn-primary">See the work</a>
-        <a href="Marko_Tica_Resume.pdf" download class="btn btn-ghost">Download résumé ↓</a>
+      <div class="meta rv"><span><i>●</i> Open to new roles</span><span>Phoenix, AZ</span><span>Open to AZ &amp; CA</span></div>
+      <h1 class="rv d1">Marko<br><span>Tica.</span></h1>
+      <p class="pos rv d2">Operations leader in <b>Fraud, Risk, Identity, and Trust &amp; Safety</b>. I build large teams, and the systems they run on.</p>
+      <div class="btns rv d3">
+        <a class="btn btn-gold" href="Marko_Tica_Resume.pdf" download>Download resume ↓</a>
+        <a class="btn btn-line" href="#contact">Get in touch</a>
       </div>
     </div>
-    <div class="portrait reveal d2" id="portrait">
-      <div class="ph-fallback">MT</div>
-      <img src="photo.jpg" alt="Portrait of Marko Tica" onerror="this.style.display='none'" />
-      <div class="tag"><b>Marko Tica</b>Phoenix, AZ · Open to Bay Area &amp; remote</div>
+    <div class="portrait rv d2" id="portrait">
+      <div class="fb">MT</div>
+      <img src="photo.jpg" alt="Marko Tica" onerror="this.style.display='none'" />
+      <div class="cap">Former Senior Operations Manager · Uber</div>
     </div>
   </div>
-  <div class="scroll-cue">Scroll<span></span></div>
+  <div class="cue">Scroll ↓</div>
 </header>
 
-<!-- ================= PINNED STATEMENT ================= -->
-<section class="pin statement" id="statement">
-  <div class="pin-stage">
-    <div class="wrap">
-      <p id="statementText">I turn messy, high-stakes operations into <span data-hl>systems that scale</span> — protecting millions of riders and earners while doing <span data-hl>more with the same team.</span></p>
+<!-- ============ ORG SCENE ============ -->
+<section class="scene" id="org" data-theme="dark">
+  <div class="stage">
+    <div class="wrap org-grid">
+      <div>
+        <div class="kicker">Leadership</div>
+        <div class="captions">
+          <div class="cap-item" data-c="0"><div class="big">150+</div><h3>people in my organization</h3><p>Most recently, US &amp; Canada Risk &amp; Identity at Uber.</p></div>
+          <div class="cap-item" data-c="1"><div class="big g">12</div><h3>Team Leads reporting to me</h3><p>Each running their own team, with me setting direction, standards, and the operating rhythm.</p></div>
+          <div class="cap-item" data-c="2"><div class="big">3</div><h3>functions, one operation</h3><p>Fraud mitigation, identity verification, and account integrity.</p></div>
+        </div>
+        <div class="phase-bar"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+      </div>
+      <svg class="org-svg" id="orgSvg" viewBox="0 0 1000 640" aria-label="Animated org chart: 150+ people organized under 12 Team Leads across 3 functions"></svg>
     </div>
   </div>
 </section>
 
-<!-- ================= PINNED STATS SEQUENCE ================= -->
-<section class="pin stats-seq" id="impact">
-  <div class="pin-stage">
-    <div class="seq-wrap">
-      <div class="seq-item" data-i="0">
-        <div class="seq-num grad-text">$5.4M</div>
-        <div class="seq-label">annualized fraud deflection</div>
-        <div class="seq-sub">Delivered by re-architecting how fraud review work gets prioritized.</div>
+<!-- ============ RESULTS SCENE ============ -->
+<section class="scene" id="results" data-theme="dark">
+  <div class="stage">
+    <div class="wrap res-grid">
+      <div class="res-text">
+        <div class="res-item" data-r="0"><div class="kicker">Results · 01 / 05</div><h3>Re-architected fraud review around ROI.</h3><p>Review time was spread evenly across work of very different value. I rebuilt the process so specialists worked the highest-impact cases first, then locked it in with new SOPs, QA, and training.</p></div>
+        <div class="res-item" data-r="1"><div class="kicker">Results · 02 / 05</div><h3>Got more out of a $25M+ program portfolio.</h3><p>Programs were competing for the same people and attention. I worked with leadership, Legal, and Compliance to cut the roadmap down to what mattered and redesigned operations around it.</p></div>
+        <div class="res-item" data-r="2"><div class="kicker">Results · 03 / 05</div><h3>Launched Women Rider Preference safely, and early.</h3><p>A high-visibility safety feature couldn't launch until a huge earner population was vetted. I directed the effort and mobilized a 20+ person team against the deadline.</p></div>
+        <div class="res-item" data-r="3"><div class="kicker">Results · 04 / 05</div><h3>Moved identity-theft operations offshore without losing quality.</h3><p>Sensitive, legally complex work moving to global sites. I led readiness through documentation, training, and hands-on coaching before handing it over.</p></div>
+        <div class="res-item" data-r="4"><div class="kicker">Results · 05 / 05</div><h3>Made process improvement everyone's job.</h3><p>I directed Uber's Lean Six Sigma Yellow Belt program and ran Kaizen events on live business problems, so the training produced real fixes.</p></div>
+        <div class="res-nav"><i></i><i></i><i></i><i></i><i></i></div>
       </div>
-      <div class="seq-item" data-i="1">
-        <div class="seq-num grad-text">700%+</div>
-        <div class="seq-label">increase in deflection</div>
-        <div class="seq-sub">With exactly zero added headcount.</div>
-      </div>
-      <div class="seq-item" data-i="2">
-        <div class="seq-num grad-text">4×</div>
-        <div class="seq-label">impact from a $25M+ program portfolio</div>
-        <div class="seq-sub">Through operational redesign and ruthless prioritization.</div>
-      </div>
-      <div class="seq-item" data-i="3">
-        <div class="seq-num grad-text">100K+</div>
-        <div class="seq-label">earners vetted — ahead of schedule</div>
-        <div class="seq-sub">For Uber's Women Rider Preference safety launch.</div>
-      </div>
-      <div class="seq-item" data-i="4">
-        <div class="seq-num grad-text">150+</div>
-        <div class="seq-label">specialists led across 12 Team Leads</div>
-        <div class="seq-sub">US &amp; Canada Risk &amp; Identity operations.</div>
-      </div>
-      <div class="seq-dots"><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="seq-progress" id="seqProgress"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= IMPACT BENTO (LIGHT) ================= -->
-<section class="light section">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow reveal">Impact, at a glance</div>
-      <h2 class="h-lg reveal d1">The numbers behind<br>the operating model.</h2>
-      <p class="lead muted-d reveal d2">Results from leading US &amp; Canada Risk &amp; Identity operations at Uber — fraud mitigation, identity verification, and account integrity.</p>
-    </div>
-
-    <div class="bento">
-      <!-- Fraud deflection chart -->
-      <div class="tile dark t-4 reveal" data-anim>
-        <h3>Fraud deflection — before vs. after re-architecture</h3>
-        <div class="big"><span class="grad-text" data-count="5.4" data-prefix="$" data-suffix="M" data-dec="1">$0M</span></div>
-        <p class="cap">Annualized deflection grew 700%+ while headcount stayed flat.</p>
-        <div class="chart">
-          <div class="flatline"><span>Headcount: flat</span></div>
-          <div class="bar-col"><div class="bar-val">1×</div><div class="bar before" data-h="12"></div><div class="bar-lbl">Baseline</div></div>
-          <div class="bar-col"><div class="bar-val grad-text">8×+</div><div class="bar after" data-h="96"></div><div class="bar-lbl">After redesign</div></div>
+      <div class="res-charts">
+        <!-- 1 fraud -->
+        <div class="rc" data-r="0">
+          <div class="rc-head"><div><div class="rc-num" id="c0num">$0.0M</div><div class="rc-lbl">annualized fraud deflection</div></div><div class="rc-meta">Indexed to baseline</div></div>
+          <div class="rc-body"><div class="vbars"><div class="vb"><div class="v">1.0×</div><div class="bar" style="height:11%"></div><div class="l">Baseline</div></div><div class="vb"><div class="v" id="c0x">1.0×</div><div class="bar g" id="c0bar" style="height:11%"></div><div class="l">After redesign</div></div></div></div>
+          <div class="rc-foot">+700% deflection, delivered in a year of flat headcount.</div>
         </div>
-        <div class="legend"><span><i style="background:#3a3a40"></i>Prior deflection</span><span><i style="background:linear-gradient(90deg,#2997ff,#a78bfa)"></i>Post-redesign deflection</span><span><i style="background:var(--teal)"></i>Team size</span></div>
-      </div>
-
-      <!-- Rings -->
-      <div class="tile t-2 reveal d1" data-anim>
-        <h3>Delivery quality</h3>
-        <div class="rings" style="grid-template-columns:1fr">
-          <div class="ring"><div class="ring-wrap"><svg viewBox="0 0 120 120"><defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><circle class="track" cx="60" cy="60" r="50" fill="none" stroke-width="12"/><circle class="val" cx="60" cy="60" r="50" fill="none" stroke-width="12" data-pct="99"/></svg><div class="ring-num"><span data-count="99" data-suffix="%">0%</span></div></div><small>On-time delivery</small></div>
+        <!-- 2 portfolio -->
+        <div class="rc" data-r="1">
+          <div class="rc-head"><div><div class="rc-num" id="c1num">1.0×</div><div class="rc-lbl">portfolio impact</div></div><div class="rc-meta">$25M+ global portfolio</div></div>
+          <div class="rc-body"><div class="hbars">
+            <div class="hb"><div class="hl"><span>Impact before</span><b>1×</b></div><div class="tr"><div class="fl" style="width:25%"></div></div></div>
+            <div class="hb"><div class="hl"><span>Impact after redesign</span><b id="c1b">1.0×</b></div><div class="tr"><div class="fl g" id="c1f0"></div></div></div>
+            <div class="hb"><div class="hl"><span>Milestones delivered on time</span><b id="c1c">0%</b></div><div class="tr"><div class="fl g" id="c1f1"></div></div></div>
+            <div class="hb"><div class="hl"><span>Stakeholder satisfaction, 150+ partners</span><b id="c1d">0%</b></div><div class="tr"><div class="fl g" id="c1f2"></div></div></div>
+          </div></div>
         </div>
-        <div class="rings" style="grid-template-columns:1fr 1fr;margin-top:10px">
-          <div class="ring"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50" fill="none" stroke-width="12"/><circle class="val" cx="60" cy="60" r="50" fill="none" stroke-width="12" data-pct="98"/></svg><div class="ring-num" style="font-size:20px"><span data-count="98" data-suffix="%">0%</span></div></div><small>Stakeholder satisfaction</small></div>
-          <div class="ring"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50" fill="none" stroke-width="12"/><circle class="val" cx="60" cy="60" r="50" fill="none" stroke-width="12" data-pct="98"/></svg><div class="ring-num" style="font-size:20px"><span data-count="98" data-suffix="%">0%</span></div></div><small>Offshore quality accuracy</small></div>
+        <!-- 3 WRP -->
+        <div class="rc" data-r="2">
+          <div class="rc-head"><div><div class="rc-num" id="c2num">0</div><div class="rc-lbl">earners vetted before launch</div></div><div class="rc-meta">1 square = 1,000 earners</div></div>
+          <div class="rc-body"><div class="waffle" id="waffle100" style="grid-template-columns:repeat(20,1fr)"></div></div>
+          <div class="rc-foot" id="c2foot">Vetting in progress…</div>
+        </div>
+        <!-- 4 offshore -->
+        <div class="rc" data-r="3">
+          <div class="rc-head"><div><div class="rc-num" id="c3num">80%</div><div class="rc-lbl">quality accuracy after transition</div></div><div class="rc-meta">Gold = required standard</div></div>
+          <div class="rc-body"><div class="bullet-wrap">
+            <div class="bullet"><div class="fl" id="c3f"></div><div class="std"></div></div>
+            <div class="axis"><span>80%</span><span>85%</span><span>90%</span><span>95%</span><span>100%</span></div>
+            <div class="chips" id="c3chips" style="grid-template-columns:repeat(4,1fr)"><span>Document</span><span>Train</span><span>Coach</span><span>Hand over</span></div>
+          </div></div>
+        </div>
+        <!-- 5 LSS -->
+        <div class="rc" data-r="4">
+          <div class="rc-head"><div><div class="rc-num" id="c4num">0</div><div class="rc-lbl">employees Yellow Belt certified</div></div><div class="rc-meta">1 dot = 1 person</div></div>
+          <div class="rc-body"><div class="waffle gold" id="waffle200" style="grid-template-columns:repeat(25,1fr)"></div></div>
+          <div class="chips gold" id="c4chips" style="grid-template-columns:repeat(5,1fr)"><span>Define</span><span>Measure</span><span>Analyze</span><span>Improve</span><span>Control</span></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Portfolio 4x -->
-      <div class="tile t-3 reveal" data-anim>
-        <h3>$25M+ global program portfolio</h3>
-        <div class="big"><span data-count="4" data-suffix="×">0×</span></div>
-        <p class="cap">Impact multiplied through operational redesign and prioritization.</p>
-        <div class="hbars">
-          <div class="hbar"><span>Before</span><div class="track"><div class="fill a" data-w="25">1×</div></div></div>
-          <div class="hbar"><span>After</span><div class="track"><div class="fill b" data-w="100">4×</div></div></div>
+<!-- ============ CAREER SCENE ============ -->
+<section class="scene" id="career" data-theme="light">
+  <div class="stage">
+    <div class="wrap car-grid">
+      <div class="car-top">
+        <div><div class="kicker" style="color:var(--green-d)">Career</div><h2 class="title" style="margin-top:10px">Contractor to<br>senior manager.</h2></div>
+        <div class="car-count"><b id="carCount">0</b><span>Promotions at Uber</span></div>
+      </div>
+      <svg class="car-svg" id="carSvg" viewBox="0 0 1000 380" aria-label="Career progression staircase"></svg>
+      <div class="car-card" id="carCard"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section class="sec" id="approach" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="kicker rv" style="color:var(--green-d)">Approach</div><h2 class="title rv d1" style="margin-top:10px">What running a large<br>operation takes.</h2></div>
+      <p class="rv d2">The work behind the org chart: building the team, holding the bar, and keeping the business aligned.</p>
+    </div>
+    <div class="approach">
+      <div class="ap wide rv">
+        <div><div class="n" style="color:var(--gold)">01 · Headcount planning</div><h3>Sizing teams with data, not guesses.</h3><p>I've grown teams far more often than I've held them flat. Every request starts with headcount analysis: forecast the volume, measure the work, and build the case from there.</p></div>
+        <div class="formula">
+          <div><span class="eq">Required HC</span> = (Volume × Handle time)</div>
+          <div style="padding-left:9.5ch">÷ (Productive hours × Utilization)</div>
+          <small>The basic capacity model behind staffing asks, shrinkage, and offshore vs. onshore mix decisions.</small>
         </div>
       </div>
-
-      <!-- Org dots -->
-      <div class="tile dark t-3 reveal d1" data-anim>
-        <h3>Organization led</h3>
-        <div class="big"><span data-count="150" data-suffix="+">0</span></div>
-        <p class="cap">Specialists across fraud, identity &amp; account integrity — through 12 Team Leads.</p>
-        <div class="dots" id="orgDots"></div>
-      </div>
-
-      <div class="tile t-2 reveal" data-anim>
-        <h3>Lean Six Sigma</h3>
-        <div class="big"><span data-count="200" data-prefix="~">0</span></div>
-        <p class="cap">Employees certified through the Yellow Belt program I directed.</p>
-      </div>
-      <div class="tile t-2 reveal d1" data-anim>
-        <h3>Cross-functional partners</h3>
-        <div class="big"><span data-count="150" data-suffix="+">0</span></div>
-        <p class="cap">Across Legal, Compliance, Product, and outsourcing partners.</p>
-      </div>
-      <div class="tile t-2 reveal d2" data-anim>
-        <h3>Fraud processes mastered</h3>
-        <div class="big"><span data-count="300" data-suffix="+">0</span></div>
-        <p class="cap">As SME and escalation point before moving into leadership.</p>
-      </div>
+      <div class="ap rv"><div class="n">02 · Hiring</div><h3>Building teams from the ground up.</h3><p>Interviewing, selecting, and onboarding specialists and Team Leads, with onboarding programs and training plans built so new hires ramp fast.</p></div>
+      <div class="ap rv d1"><div class="n">03 · Performance management</div><h3>Holding a clear bar.</h3><p>Clear expectations, regular coaching, and documented follow-through, including the hard calls when someone isn't the right fit.</p></div>
+      <div class="ap rv"><div class="n">04 · Developing leaders</div><h3>Leading through leaders.</h3><p>At this scale the job is coaching Team Leads to run their own teams well, then giving them room to do it.</p></div>
+      <div class="ap rv d1"><div class="n">05 · Cross-functional</div><h3>Keeping the business aligned.</h3><p>Turning goals from senior leadership, Legal, Compliance, and outsourcing partners into plans people can execute, and running business reviews for 100+ attendees.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= CASE STUDIES ================= -->
-<section class="white section" id="work">
+<!-- ============ TOOLKIT ============ -->
+<section class="sec" style="padding-top:0" data-theme="light">
+  <div class="wrap">
+    <div class="toolkit">
+      <div class="rv"><h3>Operations</h3><div class="tags"><span>Program management</span><span>Operating model design</span><span>Workforce planning</span><span>Change management</span><span>Lean Six Sigma</span><span>Vendor / BPO management</span></div></div>
+      <div class="rv d1"><h3>Risk &amp; Trust</h3><div class="tags"><span>Fraud mitigation</span><span>Identity verification</span><span>Account integrity</span><span>Risk &amp; compliance</span><span>QA frameworks</span></div></div>
+      <div class="rv d2"><h3>Data &amp; Tools</h3><div class="tags"><span>SQL</span><span>Tableau</span><span>JIRA</span><span>Salesforce</span><span>STATA</span><span>Excel / Sheets</span><span>Generative AI</span></div></div>
+    </div>
+    <div class="creds rv">
+      <div><small>Education</small>B.S. Political Science, minor Global Studies · Arizona State University</div>
+      <div><small>Certification</small>Lean Six Sigma Kaizen Yellow Belt</div>
+      <div><small>Languages</small>English · Serbo-Croatian</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact" data-theme="dark">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow reveal">Case studies</div>
-      <h2 class="h-lg reveal d1">Big problems.<br>Measurable outcomes.</h2>
-      <p class="lead muted-d reveal d2">Select a program to see the challenge, the approach, and the result.</p>
+      <div><div class="kicker rv">Contact</div><h2 class="title rv d1" style="margin-top:10px">Let's talk.</h2></div>
+      <p class="rv d2">Originally from California, based in Phoenix. Looking for senior operations, program, and Trust &amp; Safety leadership roles.</p>
     </div>
-    <div class="cases">
-      <button class="case c1 reveal" data-case="fraud">
-        <div><div class="kicker">Fraud Operations</div><h3>Re-architecting fraud review around ROI</h3></div>
-        <div><div class="metric">$5.4M</div><div class="mcap">annualized deflection · +700% · flat headcount</div><span class="more"><span class="plus">+</span>Read case study</span></div>
-      </button>
-      <button class="case c2 reveal d1" data-case="wrp">
-        <div><div class="kicker">Platform Safety Launch</div><h3>Women Rider Preference</h3></div>
-        <div><div class="metric">100K+</div><div class="mcap">earners vetted ahead of schedule</div><span class="more"><span class="plus">+</span>Read case study</span></div>
-      </button>
-      <button class="case c3 reveal" data-case="lss">
-        <div><div class="kicker">Continuous Improvement</div><h3>Scaling Lean Six Sigma at Uber</h3></div>
-        <div><div class="metric">~200</div><div class="mcap">employees certified · live Kaizen events</div><span class="more"><span class="plus">+</span>Read case study</span></div>
-      </button>
-      <button class="case c4 reveal d1" data-case="offshore">
-        <div><div class="kicker">Global Transformation</div><h3>Offshoring identity-theft operations</h3></div>
-        <div><div class="metric">98%</div><div class="mcap">quality-accuracy standard achieved</div><span class="more"><span class="plus">+</span>Read case study</span></div>
-      </button>
-      <button class="case c5 reveal" data-case="portfolio">
-        <div><div class="kicker">Portfolio Leadership</div><h3>Turning a $25M+ program portfolio into 4× impact</h3></div>
-        <div><div class="metric">4×</div><div class="mcap">impact · 99% on-time delivery · 98%+ stakeholder satisfaction</div><span class="more"><span class="plus">+</span>Read case study</span></div>
-      </button>
+    <div class="ct-grid">
+      <div class="rv">
+        <div class="locs">
+          <div>Phoenix, AZ <span class="home">● Based here</span></div>
+          <div>San Francisco Bay Area <span>Open to relocate</span></div>
+          <div>Sacramento, CA <span>Open to relocate</span></div>
+          <div>Anywhere in AZ or CA <span>Open</span></div>
+        </div>
+        <div style="margin-top:30px"><a class="btn btn-gold" href="Marko_Tica_Resume.pdf" download>Download resume ↓</a></div>
+      </div>
+      <div class="links rv d1">
+        <a href="mailto:Mtica23@outlook.com"><div><small>Email</small><b>Mtica23@outlook.com</b></div><span class="arr">→</span></a>
+        <a href="https://www.linkedin.com/in/markotica1/" target="_blank" rel="noopener"><div><small>LinkedIn</small><b>linkedin.com/in/markotica1</b></div><span class="arr">↗</span></a>
+        <a href="tel:+15303001342"><div><small>Phone</small><b>(530) 300-1342</b></div><span class="arr">→</span></a>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- Modal -->
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-  <div class="sheet" id="sheet">
-    <div class="sheet-hero" id="mHero">
-      <button class="close" id="mClose" aria-label="Close">×</button>
-      <div class="kicker" id="mKicker"></div>
-      <h3 id="mTitle"></h3>
-    </div>
-    <div class="sheet-kpis" id="mKpis"></div>
-    <div class="sheet-body" id="mBody"></div>
-  </div>
-</div>
-
-<!-- ================= TIMELINE ================= -->
-<section class="tl-section section" id="journey">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow reveal">Career journey</div>
-      <h2 class="h-lg reveal d1">From the front line<br>to running the operation.</h2>
-      <p class="lead muted-l reveal d2">Seven years, three promotions, one through-line: making high-stakes operations work better.</p>
-    </div>
-    <div class="tl-track reveal" id="tlTrack"><div class="tl-fill" id="tlFill"></div></div>
-    <div class="tl-panel reveal" id="tlPanel"></div>
-    <p class="tl-hint">Tap a milestone to explore · or use ← → keys</p>
-  </div>
-</section>
-
-<!-- ================= LEADERSHIP ================= -->
-<section class="white section" id="leadership">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow reveal">How I lead</div>
-      <h2 class="h-lg reveal d1">Three principles.<br>Every program.</h2>
-    </div>
-    <div class="principles">
-      <div class="pr reveal"><div class="n">01</div><h3>Design the system before scaling the team.</h3><p>Headcount is the most expensive fix. I start with the operating model — workflows, priorities, controls — which is how deflection grew 700%+ with a flat team.</p></div>
-      <div class="pr reveal d1"><div class="n">02</div><h3>Turn safety goals into roadmaps people can execute.</h3><p>Working across Legal, Compliance, and outsourcing partners, I translate risk and policy intent into measurable plans, milestones, and owners.</p></div>
-      <div class="pr reveal d2"><div class="n">03</div><h3>Build leaders, not just processes.</h3><p>From 12 Team Leads to ~200 Lean Six Sigma graduates, the goal is a team that finds and fixes problems without waiting to be told.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CAPABILITIES ================= -->
-<section class="light section">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow reveal">Capabilities</div>
-      <h2 class="h-lg reveal d1">The toolkit.</h2>
-    </div>
-    <div class="caps">
-      <div class="reveal"><h3>Program &amp; Delivery</h3><div class="chips"><span class="chip">Program management</span><span class="chip">Operating model design</span><span class="chip">Change management</span><span class="chip">Workforce planning</span><span class="chip">Lean Six Sigma</span><span class="chip">Executive business reviews</span></div></div>
-      <div class="reveal d1"><h3>Fraud, Risk &amp; Trust</h3><div class="chips"><span class="chip">Fraud mitigation</span><span class="chip">Identity verification</span><span class="chip">Account integrity</span><span class="chip">Risk &amp; compliance</span><span class="chip">QA frameworks</span><span class="chip">Vendor &amp; BPO management</span></div></div>
-      <div class="reveal d2"><h3>Data &amp; Tools</h3><div class="chips"><span class="chip">SQL</span><span class="chip">Tableau</span><span class="chip">JIRA</span><span class="chip">Salesforce</span><span class="chip">STATA</span><span class="chip">Generative AI</span><span class="chip">Excel / Sheets</span></div></div>
-    </div>
-    <div class="edu">
-      <div class="reveal"><b>Arizona State University</b><span>B.S. Political Science · Minor in Global Studies · 2020</span></div>
-      <div class="reveal d1"><b>Lean Six Sigma Kaizen Yellow Belt</b><span>Certified, and later directed Uber's Yellow Belt program</span></div>
-      <div class="reveal d2"><b>Languages</b><span>English · Serbo-Croatian</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CTA / CONTACT ================= -->
-<section class="cta" id="contact">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div class="eyebrow reveal">What's next</div>
-    <h2 class="h-xl reveal d1" style="margin-top:16px">Let's build<br><span class="grad-text">what's next.</span></h2>
-    <p class="lead reveal d2">I'm looking for my next senior operations, program, or Trust &amp; Safety leadership role — in Phoenix, the Bay Area, or remote.</p>
-    <div class="btns reveal d3">
-      <a href="mailto:Mtica23@outlook.com" class="btn btn-blue">Get in touch</a>
-      <a href="Marko_Tica_Resume.pdf" download class="btn btn-ghost">Download résumé ↓</a>
-    </div>
-    <div class="contact-row reveal d4">
-      <a class="contact-card" href="mailto:Mtica23@outlook.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Mtica23@outlook.com</a>
-      <a class="contact-card" href="https://www.linkedin.com/in/markotica1/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
-      <a class="contact-card" href="tel:+15303001342"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(530) 300-1342</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap"><span>© <span id="yr"></span> Marko Tica</span><span>Phoenix, AZ · Designed &amp; built with care</span></div>
-</footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Marko Tica</span><span>Phoenix, AZ</span></div></footer>
 
 <script>
 (() => {
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const seg = (p, a, b) => clamp((p - a) / (b - a));
+  $('#yr').textContent = new Date().getFullYear();
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  const mk = (tag, attrs, parent) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
 
-  /* ---------- Nav ---------- */
-  const nav = document.getElementById('nav');
-  const links = [...document.querySelectorAll('.nav ul a')];
-  const sections = links.map(a => document.querySelector(a.getAttribute('href')));
-
-  /* ---------- Statement word split ---------- */
-  const st = document.getElementById('statementText');
-  const words = [];
-  (function split(node){
-    [...node.childNodes].forEach(n => {
-      if (n.nodeType === 3) {
-        const frag = document.createDocumentFragment();
-        n.textContent.split(/(\s+)/).forEach(t => {
-          if (!t) return;
-          if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(t)); return; }
-          const s = document.createElement('span'); s.className = 'w'; s.textContent = t;
-          if (node.hasAttribute && node.hasAttribute('data-hl')) s.classList.add('hl');
-          words.push(s); frag.appendChild(s);
-        });
-        node.replaceChild(frag, n);
-      } else if (n.nodeType === 1) split(n);
-    });
-  })(st);
-
-  /* ---------- Org dots ---------- */
-  const od = document.getElementById('orgDots');
-  for (let i = 0; i < 160; i++) {
-    const d = document.createElement('i');
-    if (i < 12) d.className = 'lead';
-    d.style.transitionDelay = (i * 6) + 'ms';
-    od.appendChild(d);
-  }
-
-  /* ---------- Scroll-driven pinned sections ---------- */
-  const statement = document.getElementById('statement');
-  const seqSec = document.getElementById('impact');
-  const seqItems = [...seqSec.querySelectorAll('.seq-item')];
-  const seqDots = [...seqSec.querySelectorAll('.seq-dots i')];
-  const seqProg = document.getElementById('seqProgress');
-  const portrait = document.getElementById('portrait');
-  const progress = el => {
-    const r = el.getBoundingClientRect();
-    const total = el.offsetHeight - window.innerHeight;
-    return Math.min(1, Math.max(0, -r.top / (total || 1)));
-  };
-  let lastSeq = -1;
-  function onScroll(){
-    const y = window.scrollY;
-    nav.classList.toggle('scrolled', y > 20);
-
-    // active link
-    let cur = -1;
-    sections.forEach((s, i) => { if (s && s.getBoundingClientRect().top < window.innerHeight * .4) cur = i; });
-    links.forEach((a, i) => a.classList.toggle('active', i === cur));
-
-    if (reduce) return;
-
-    // hero parallax
-    if (y < window.innerHeight * 1.2) {
-      portrait.style.transform = `translateY(${y * 0.12}px) scale(${1 - y / 5000})`;
-    }
-
-    // statement
-    const p1 = progress(statement);
-    const lit = Math.round(p1 * 1.25 * words.length);
-    words.forEach((w, i) => w.classList.toggle('on', i < lit));
-
-    // stats sequence
-    const p2 = progress(seqSec);
-    const idx = Math.min(seqItems.length - 1, Math.floor(p2 * seqItems.length));
-    seqProg.style.width = (p2 * 100) + '%';
-    if (idx !== lastSeq) {
-      seqItems.forEach((it, i) => {
-        it.classList.toggle('active', i === idx);
-        it.classList.toggle('past', i < idx);
-      });
-      seqDots.forEach((d, i) => d.classList.toggle('on', i === idx));
-      lastSeq = idx;
-    }
-  }
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) { requestAnimationFrame(() => { onScroll(); ticking = false; }); ticking = true; }
-  }, { passive: true });
-  window.addEventListener('resize', onScroll);
-  if (reduce) { words.forEach(w => w.classList.add('on')); seqItems[0].classList.add('active'); }
-  onScroll();
-
-  /* ---------- Counters ---------- */
-  function countUp(el){
-    const end = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0);
-    const pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
-    if (reduce) { el.textContent = pre + end.toFixed(dec) + suf; return; }
-    const dur = 1800, t0 = performance.now();
-    (function tick(t){
-      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 4);
-      el.textContent = pre + (end * e).toFixed(dec) + suf;
-      if (k < 1) requestAnimationFrame(tick);
-    })(t0);
-  }
-
-  /* ---------- Reveal + chart animation ---------- */
-  const C = 2 * Math.PI * 50;
-  document.querySelectorAll('.ring .val').forEach(c => { c.style.strokeDasharray = C; c.style.strokeDashoffset = C; });
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target;
-      el.classList.add('in');
-      if (el.hasAttribute('data-anim')) {
-        el.querySelectorAll('[data-count]').forEach(countUp);
-        el.querySelectorAll('.bar').forEach(b => b.style.height = b.dataset.h + '%');
-        el.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.w + '%');
-        el.querySelectorAll('.ring .val').forEach(c => c.style.strokeDashoffset = C * (1 - c.dataset.pct / 100));
+  /* ---------- Hero network canvas ---------- */
+  (function(){
+    const c = $('#heroCanvas'), ctx = c.getContext('2d'); let W, H, pts = [];
+    function size(){ W = c.width = c.offsetWidth * devicePixelRatio; H = c.height = c.offsetHeight * devicePixelRatio;
+      pts = Array.from({length: Math.round(W * H / 26000 / devicePixelRatio)}, () => ({x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .25, vy: (Math.random() - .5) * .25})); }
+    size(); addEventListener('resize', size);
+    function draw(){
+      ctx.clearRect(0, 0, W, H); const R = 130 * devicePixelRatio;
+      for (const p of pts) { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > W) p.vx *= -1; if (p.y < 0 || p.y > H) p.vy *= -1; }
+      for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+        const a = pts[i], b = pts[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+        if (d < R) { ctx.strokeStyle = `rgba(143,163,184,${.18 * (1 - d / R)})`; ctx.lineWidth = devicePixelRatio; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
       }
-      io.unobserve(el);
-    });
-  }, { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  /* ---------- Case studies ---------- */
-  const CASES = {
-    fraud: {
-      kicker: 'Fraud Operations · Uber US&C Risk & Identity',
-      title: 'Re-architecting fraud review around ROI',
-      bg: 'radial-gradient(circle at 85% 15%,#3b82f6,transparent 55%),radial-gradient(circle at 10% 100%,#7c3aed,transparent 55%),#0b0b14',
-      kpis: [['$5.4M','annualized fraud deflection'],['700%+','increase in deflection'],['0','added headcount']],
-      challenge: 'Fraud review capacity was spread evenly across work of very different value. As volume grew, the default answer was more headcount — but deflection wasn\'t keeping pace with effort.',
-      approach: [
-        'Mapped the end-to-end review process and segmented work by financial and safety impact.',
-        'Restructured queues and priorities so specialist time went to the highest-ROI reviews first.',
-        'Updated SOPs, QA checks, and training so the new model held at scale.',
-        'Tracked results with SQL and Tableau dashboards and reviewed them with leadership.'
-      ],
-      result: 'Annualized fraud deflection reached $5.4M — a 700%+ increase — with a flat team. The same people, pointed at the right work.',
-      role: 'Senior Operations Manager; owned the strategy, the redesign, and delivery across 12 Team Leads and 150+ specialists.'
-    },
-    wrp: {
-      kicker: 'Platform Safety Launch',
-      title: 'Women Rider Preference',
-      bg: 'radial-gradient(circle at 15% 15%,#ec4899,transparent 50%),radial-gradient(circle at 90% 90%,#8b5cf6,transparent 55%),#140b14',
-      kpis: [['100K+','earners vetted'],['20+','staff mobilized'],['Early','delivered ahead of schedule']],
-      challenge: 'A high-visibility safety feature depended on accurately vetting a very large earner population before launch — on a fixed timeline, with no room for quality misses.',
-      approach: [
-        'Stood up a dedicated cross-functional workstream and mobilized 20+ staff.',
-        'Built the review workflow, quality controls, and daily throughput tracking.',
-        'Ran the program against a launch-critical deadline with clear escalation paths.'
-      ],
-      result: 'More than 100,000 earners vetted ahead of schedule, earning company-wide recognition for platform safety.',
-      role: 'Directed the initiative end to end.'
-    },
-    lss: {
-      kicker: 'Continuous Improvement',
-      title: 'Scaling Lean Six Sigma at Uber',
-      bg: 'radial-gradient(circle at 85% 85%,#14b8a6,transparent 55%),radial-gradient(circle at 10% 10%,#0ea5e9,transparent 50%),#071214',
-      kpis: [['~200','employees certified'],['Yellow Belt','certification program'],['Live','Kaizen on real problems']],
-      challenge: 'Process improvement depended on a few experts. The organization needed a shared language and toolkit so teams could find and fix problems on their own.',
-      approach: [
-        'Directed Uber\'s Lean Six Sigma Yellow Belt certification program.',
-        'Ran Kaizen events on live business problems instead of textbook cases, so training produced real fixes.',
-        'Built a pipeline of improvement-minded leaders across operations.'
-      ],
-      result: 'About 200 employees certified, and continuous improvement became part of how teams operate day to day.',
-      role: 'Program director and Kaizen facilitator; Lean Six Sigma Kaizen Yellow Belt.'
-    },
-    offshore: {
-      kicker: 'Global Transformation',
-      title: 'Offshoring identity-theft operations',
-      bg: 'radial-gradient(circle at 15% 85%,#f59e0b,transparent 50%),radial-gradient(circle at 85% 15%,#ef4444,transparent 50%),#140c07',
-      kpis: [['98%','quality-accuracy standard'],['Global','multi-site transition'],['High','sensitivity work']],
-      challenge: 'Identity-theft operations are sensitive and often legally complex. Moving them to global sites risked quality, consistency, and the customer experience.',
-      approach: [
-        'Led offshoring readiness: documentation, training curricula, and coaching for new teams.',
-        'Set clear quality standards and readiness gates before handing over work.',
-        'Partnered with Legal, Compliance, and outsourcing partners on high-sensitivity cases.'
-      ],
-      result: 'The global transition hit a 98% quality-accuracy standard.',
-      role: 'Led the transition and readiness program.'
-    },
-    portfolio: {
-      kicker: 'Portfolio Leadership',
-      title: 'Turning a $25M+ program portfolio into 4× impact',
-      bg: 'radial-gradient(circle at 50% 120%,#2997ff,transparent 60%),linear-gradient(135deg,#0b0b0f,#1c1c24)',
-      kpis: [['4×','portfolio impact'],['99%','on-time delivery'],['98%+','stakeholder satisfaction'],['150+','partners']],
-      challenge: 'A global portfolio of Risk & Identity programs competed for the same people and attention. Without clear priorities, impact was diluted.',
-      approach: [
-        'Worked with senior leadership, Legal, Compliance, and outsourcing partners to turn safety and compliance goals into measurable roadmaps.',
-        'Redesigned operations and prioritization to focus effort on the highest-impact programs.',
-        'Ran disciplined delivery: milestones, risk tracking, and business reviews for 100+ person audiences.'
-      ],
-      result: '4× portfolio impact, 99% on-time delivery, and 98%+ satisfaction across 150+ stakeholders.',
-      role: 'Owned the global portfolio as Senior Operations Manager.'
+      ctx.fillStyle = 'rgba(143,163,184,.6)';
+      for (const p of pts) { ctx.beginPath(); ctx.arc(p.x, p.y, 1.6 * devicePixelRatio, 0, 7); ctx.fill(); }
+      if (!reduce) requestAnimationFrame(draw);
     }
-  };
-  const modal = document.getElementById('modal');
-  const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-  let lastFocus = null;
-  function openCase(key){
-    const c = CASES[key]; if (!c) return;
-    lastFocus = document.activeElement;
-    document.getElementById('mHero').style.background = c.bg;
-    document.getElementById('mKicker').textContent = c.kicker;
-    document.getElementById('mTitle').textContent = c.title;
-    document.getElementById('mKpis').innerHTML = c.kpis.map(k => `<div><b>${esc(k[0])}</b><span>${esc(k[1])}</span></div>`).join('');
-    document.getElementById('mBody').innerHTML = `
-      <div><h4>The challenge</h4><p>${esc(c.challenge)}</p></div>
-      <div><h4>The approach</h4><ul>${c.approach.map(a => `<li>${esc(a)}</li>`).join('')}</ul></div>
-      <div><h4>The result</h4><p>${esc(c.result)}</p></div>
-      <div><h4>My role</h4><p>${esc(c.role)}</p></div>`;
-    modal.classList.add('open'); modal.scrollTop = 0;
-    document.body.style.overflow = 'hidden';
-    document.getElementById('mClose').focus();
-  }
-  function closeCase(){
-    modal.classList.remove('open'); document.body.style.overflow = '';
-    if (lastFocus) lastFocus.focus();
-  }
-  document.querySelectorAll('[data-case]').forEach(b => b.addEventListener('click', () => openCase(b.dataset.case)));
-  document.getElementById('mClose').addEventListener('click', closeCase);
-  modal.addEventListener('click', e => { if (e.target === modal) closeCase(); });
+    draw();
+  })();
 
-  /* ---------- Timeline ---------- */
-  const TL = [
-    { yr:'2019', short:'Joined Uber', when:'Feb 2019', title:'Risk & Compliance Specialist II', org:'Uber · Phoenix, AZ',
-      pts:['Joined Uber\'s Risk & Compliance organization on the front line of fraud investigations.','Ran concurrent weekly workstreams: compliance document reviews, partner fraud audits, and driver partner outreach campaigns.'] },
-    { yr:'2020', short:'ASU graduate', when:'May 2020', title:'B.S. Political Science, Arizona State University', org:'Minor in Global Studies · Tempe, AZ',
-      pts:['Completed my degree while working at Uber.','Global Studies background that shapes how I work with international sites and partners.'] },
-    { yr:'2021', short:'Specialist III', when:'2020 – Apr 2022', title:'Risk & Compliance Specialist III', org:'Uber · Phoenix, AZ',
-      pts:['Became the subject matter expert and escalation point for 300+ fraud investigation processes.','Used operational and data analysis to close process and knowledge gaps.','Chaired an internal engagement committee for recognition, community service, and professional development.'] },
-    { yr:'2022', short:'Sr. Ops Project Lead', when:'Apr 2022 – Sep 2023', title:'Sr. Operations Project Lead, Risk & Identity Compliance', org:'Uber · Phoenix, AZ',
-      pts:['Owned end-to-end delivery of cross-functional Risk & Identity programs across multiple Centers of Excellence and global sites.','Designed onboarding, training plans, SOPs, and operational controls for new workflows.','Partnered with Senior Legal Counsel on high-sensitivity identity-theft claims; facilitated business reviews for 100+ attendees.'] },
-    { yr:'2023', short:'Sr. Ops Manager', when:'Sep 2023 – 2026', title:'Senior Operations Manager, Fraud, Risk & Identity', org:'Uber · US & Canada',
-      pts:['Led 12 Team Leads and 150+ specialists across fraud mitigation, identity verification, and account integrity.','Owned a $25M+ global portfolio and grew its impact 4×.','Delivered $5.4M in annualized fraud deflection (+700%) with flat headcount.','Directed Women Rider Preference vetting (100K+ earners) and Uber\'s Lean Six Sigma Yellow Belt program (~200 certified).'] },
-    { yr:'Next', short:'Your team?', when:'Now', title:'Ready for the next challenge', org:'Phoenix · Bay Area · Remote',
-      pts:['Looking for a senior operations, program, or Trust & Safety leadership role.','Bringing a track record of scaling impact without scaling cost.'] }
-  ];
-  const track = document.getElementById('tlTrack'), panel = document.getElementById('tlPanel'), fill = document.getElementById('tlFill');
-  const nodes = TL.map((t, i) => {
-    const b = document.createElement('button');
-    b.className = 'tl-node'; b.setAttribute('aria-label', t.when + ': ' + t.title);
-    b.innerHTML = `<span class="yr">${t.yr}</span><span class="rl">${t.short}</span>`;
-    b.addEventListener('click', () => setTL(i));
-    track.appendChild(b); return b;
-  });
-  let tlIdx = 4;
-  function setTL(i){
-    tlIdx = i; const t = TL[i];
-    nodes.forEach((n, j) => { n.classList.toggle('active', j === i); n.classList.toggle('done', j < i); });
-    fill.style.width = (i / (TL.length - 1) * 100) + '%';
-    panel.innerHTML = `<div class="tl-anim"><div class="when">${t.when}</div><h3>${t.title}</h3><div class="org">${t.org}</div></div>
-      <ul class="tl-anim">${t.pts.map(p => `<li>${p}</li>`).join('')}</ul>`;
-  }
-  setTL(tlIdx);
+  /* ---------- ORG SCENE ---------- */
+  const org = (function(){
+    const svg = $('#orgSvg');
+    let rnd = 7; const rand = () => (rnd = (rnd * 16807) % 2147483647) / 2147483647;
+    const linesG = mk('g', {}, svg), labelsG = mk('g', {}, svg), dotsG = mk('g', {}, svg);
+    const groups = [], N = 150, TL = 12;
+    // functional groups
+    const GX = [180, 500, 820], fnNames = ['Fraud mitigation', 'Identity verification', 'Account integrity'];
+    const you = mk('g', {opacity: 0}, svg);
+    mk('circle', {cx: 500, cy: 56, r: 16, fill: '#E0A94A'}, you);
+    mk('text', {x: 530, y: 61, style: 'fill:#fff;font-size:14px'}, you).textContent = 'Marko · Sr. Ops Manager';
+    fnNames.forEach((n, g) => {
+      mk('path', {d: `M500 72 C500 110 ${GX[g]} 100 ${GX[g]} 140`, stroke: 'rgba(224,169,74,.6)', 'stroke-width': 1.5, fill: 'none', class: 'oline'}, linesG);
+      const t = mk('text', {x: GX[g], y: 618, 'text-anchor': 'middle', class: 'olabel'}, labelsG); t.textContent = n;
+    });
+    // cluster layouts
+    const clusterA = i => ({x: 95 + (i % 6) * 162, y: 210 + Math.floor(i / 6) * 230});            // 6x2 teams
+    const clusterB = i => { const g = Math.floor(i / 4), k = i % 4; return {x: GX[g] + (k % 2 ? 72 : -72), y: 245 + Math.floor(k / 2) * 190}; }; // 3 functions
+    for (let t = 0; t < TL; t++) groups.push([]);
+    const dots = [];
+    for (let i = 0; i < N + TL; i++) {
+      const isTL = i < TL, team = isTL ? i : (i - TL) % TL;
+      const idx = isTL ? -1 : groups[team].length;
+      if (!isTL) groups[team].push(i);
+      const el = mk('circle', {r: isTL ? 7 : 4.5, fill: '#4C6784'}, dotsG);
+      dots.push({el, isTL, team, idx, sx: 40 + rand() * 920, sy: 40 + rand() * 560, ph: rand() * 6.28});
+    }
+    dots.forEach(d => { d.n = d.isTL ? 1 : groups[d.team].length; });
+    const pos = (d, layout) => {
+      const c = layout(d.team); if (d.isTL) return c;
+      const a = d.idx / d.n * Math.PI * 2 - Math.PI / 2, r = 48;
+      return {x: c.x + Math.cos(a) * r, y: c.y + Math.sin(a) * r};
+    };
+    dots.forEach(d => { d.A = pos(d, clusterA); d.B = pos(d, clusterB); });
+    const caps = $$('#org .cap-item'), bars = $$('#org .phase-bar b'), olines = $$('#orgSvg .oline'), olabels = $$('#orgSvg .olabel');
+    let t0 = performance.now();
+    return function update(p, now){
+      const t1 = ease(seg(p, .28, .55)), t2 = ease(seg(p, .64, .9));
+      const drift = (now - t0) / 1000;
+      dots.forEach(d => {
+        const jx = Math.sin(drift * .8 + d.ph) * 6 * (1 - t1), jy = Math.cos(drift * .7 + d.ph) * 6 * (1 - t1);
+        let x = lerp(d.sx + jx, d.A.x, t1), y = lerp(d.sy + jy, d.A.y, t1);
+        x = lerp(x, d.B.x, t2); y = lerp(y, d.B.y, t2);
+        d.el.setAttribute('cx', x.toFixed(1)); d.el.setAttribute('cy', y.toFixed(1));
+      });
+      const tlOn = t1 > .5;
+      dots.forEach(d => { if (d.isTL) d.el.setAttribute('fill', tlOn ? '#E0A94A' : '#4C6784'); });
+      you.setAttribute('opacity', t2.toFixed(2));
+      olines.forEach(l => l.setAttribute('opacity', t2.toFixed(2)));
+      olabels.forEach(l => l.setAttribute('opacity', t2.toFixed(2)));
+      const phase = p < .4 ? 0 : p < .72 ? 1 : 2;
+      caps.forEach((c, i) => c.classList.toggle('on', i === phase));
+      bars[0].style.transform = `scaleX(${seg(p, 0, .4)})`; bars[1].style.transform = `scaleX(${seg(p, .4, .72)})`; bars[2].style.transform = `scaleX(${seg(p, .72, 1)})`;
+    };
+  })();
 
-  document.addEventListener('keydown', e => {
-    if (modal.classList.contains('open')) { if (e.key === 'Escape') closeCase(); return; }
-    const r = document.getElementById('journey').getBoundingClientRect();
-    const inView = r.top < window.innerHeight * .6 && r.bottom > window.innerHeight * .4;
-    if (!inView) return;
-    if (e.key === 'ArrowRight') setTL(Math.min(TL.length - 1, tlIdx + 1));
-    if (e.key === 'ArrowLeft') setTL(Math.max(0, tlIdx - 1));
-  });
+  /* ---------- RESULTS SCENE ---------- */
+  const res = (function(){
+    const w100 = $('#waffle100'), w200 = $('#waffle200');
+    const cells100 = Array.from({length: 100}, () => w100.appendChild(document.createElement('i')));
+    const cells200 = Array.from({length: 200}, () => w200.appendChild(document.createElement('i')));
+    const items = $$('.res-item'), charts = $$('.rc'), navs = $$('.res-nav i');
+    const c3chips = $$('#c3chips span'), c4chips = $$('#c4chips span');
+    let last = -1;
+    return function update(p){
+      const n = 5, i = Math.min(n - 1, Math.floor(p * n)), local = clamp(p * n - i);
+      const t = reduce ? 1 : ease(clamp(local / .7));
+      if (i !== last) { items.forEach((e, k) => e.classList.toggle('on', k === i)); charts.forEach((e, k) => e.classList.toggle('on', k === i)); navs.forEach((e, k) => e.classList.toggle('on', k === i)); last = i; }
+      if (i === 0) {
+        $('#c0num').textContent = '$' + (5.4 * t).toFixed(1) + 'M';
+        $('#c0x').textContent = (1 + 7 * t).toFixed(1) + '×';
+        $('#c0bar').style.height = (11 + 77 * t) + '%';
+      } else if (i === 1) {
+        $('#c1num').textContent = (1 + 3 * t).toFixed(1) + '×'; $('#c1b').textContent = (1 + 3 * t).toFixed(1) + '×';
+        $('#c1f0').style.width = (25 + 75 * t) + '%';
+        $('#c1c').textContent = Math.round(99 * t) + '%'; $('#c1f1').style.width = (99 * t) + '%';
+        $('#c1d').textContent = Math.round(98 * t) + '%' + (t > .99 ? '+' : ''); $('#c1f2').style.width = (98 * t) + '%';
+      } else if (i === 2) {
+        const k = Math.round(100 * t); cells100.forEach((c, j) => c.classList.toggle('on', j < k));
+        $('#c2num').textContent = (k * 1000).toLocaleString('en-US') + (k === 100 ? '+' : '');
+        $('#c2foot').textContent = k === 100 ? '✓ Delivered ahead of schedule · 20+ person team' : 'Vetting in progress…';
+      } else if (i === 3) {
+        const q = 80 + 18 * t; $('#c3num').textContent = Math.round(q) + '%';
+        $('#c3f').style.width = ((q - 80) / 20 * 100) + '%';
+        c3chips.forEach((c, j) => c.classList.toggle('on', t >= (j + 1) / 4 - .01));
+      } else {
+        const k = Math.round(200 * t); cells200.forEach((c, j) => c.classList.toggle('on', j < k));
+        $('#c4num').textContent = (k === 200 ? '~' : '') + k;
+        c4chips.forEach((c, j) => c.classList.toggle('on', t >= (j + 1) / 5 - .01));
+      }
+    };
+  })();
+
+  /* ---------- CAREER SCENE ---------- */
+  const car = (function(){
+    const STEPS = [
+      {short: 'Brand Ambassador', when: '2016–17', tag: 'Where it started', title: 'Brand Ambassador (contract)', line: 'My first role with Uber, representing the brand as a contractor.'},
+      {short: 'Specialist', when: '2019', tag: 'Promotion 1', title: 'Risk & Compliance Specialist', line: 'Hired full-time into Risk & Compliance, working fraud investigations.'},
+      {short: 'SME', when: '2019–22', tag: 'Promotion 2', title: 'Subject Matter Expert', line: 'Became the go-to expert and escalation point across 300+ fraud processes.'},
+      {short: 'Sr. Specialist', when: '2019–22', tag: 'Promotion 3', title: 'Senior Specialist', line: 'Started leading workstreams and people, not just cases.'},
+      {short: 'Program Lead', when: '2022', tag: 'Promotion 4', title: 'Sr. Operations Project Lead, Risk & Identity', line: 'Moved from cases to programs: cross-functional delivery across global sites and Centers of Excellence.'},
+      {short: 'Sr. Ops Manager', when: '2023', tag: 'Promotion 5', title: 'Senior Operations Manager, Fraud, Risk & Identity', line: 'Took over US & Canada Risk & Identity operations.'}
+    ];
+    const svg = $('#carSvg'), card = $('#carCard'), cnt = $('#carCount');
+    const n = STEPS.length, x0 = 40, x1 = 960, w = (x1 - x0) / n, yTop = 70, yBot = 330, h = (yBot - yTop) / (n - 1);
+    const P = i => ({x: x0 + i * w, y: yBot - i * h});
+    let d = `M${x0} ${yBot}`;
+    for (let i = 0; i < n; i++) { const a = P(i); if (i) d += ` V${a.y}`; d += ` H${a.x + w}`; }
+    mk('path', {d, stroke: '#DCD6CA', 'stroke-width': 3, fill: 'none'}, svg);
+    const area = mk('path', {d: d + ` V${yBot} H${x0} Z`, fill: 'rgba(52,195,143,.08)'}, svg);
+    const line = mk('path', {d, stroke: '#1E8A62', 'stroke-width': 4, fill: 'none', 'stroke-linejoin': 'round'}, svg);
+    const L = line.getTotalLength(); line.style.strokeDasharray = L;
+    const nodes = STEPS.map((s, i) => {
+      const a = P(i);
+      mk('text', {x: a.x + 4, y: a.y - 32, class: 'yr'}, svg).textContent = s.when;
+      mk('text', {x: a.x + 4, y: a.y - 14}, svg).textContent = s.short;
+      return mk('circle', {cx: a.x, cy: a.y, r: 7, fill: '#F5F3EE', stroke: '#1E8A62', 'stroke-width': 3, class: 'node'}, svg);
+    });
+    const clip = mk('clipPath', {id: 'carClip'}, svg), cr = mk('rect', {x: 0, y: 0, width: 0, height: 400}, clip);
+    area.setAttribute('clip-path', 'url(#carClip)');
+    let last = -1;
+    return function update(p){
+      const q = reduce ? 1 : seg(p, .05, .92);
+      line.style.strokeDashoffset = L * (1 - q);
+      cr.setAttribute('width', x0 + q * (x1 - x0));
+      const i = Math.min(n - 1, Math.floor(q * n + .0001 + (q >= 1 ? 0 : 0)));
+      const idx = q >= 1 ? n - 1 : i;
+      nodes.forEach((c, k) => { c.setAttribute('fill', k <= idx ? '#1E8A62' : '#F5F3EE'); c.setAttribute('r', k === idx ? 10 : 7); });
+      if (idx !== last) {
+        const s = STEPS[idx]; cnt.textContent = idx;
+        card.innerHTML = `<div class="when swap">${s.tag} · ${s.when}</div><div class="swap"><h3>${s.title}</h3><p>${s.line}</p></div>`;
+        last = idx;
+      }
+    };
+  })();
+
+  /* ---------- Scroll loop ---------- */
+  const scenes = [[$('#org'), org], [$('#results'), res], [$('#career'), car]];
+  const prog = el => { const r = el.getBoundingClientRect(), tot = el.offsetHeight - innerHeight; return clamp(-r.top / (tot || 1)); };
+  const nav = $('#nav'), bar = $('#progress'), links = $$('.nav ul a'), targets = links.map(a => $(a.getAttribute('href')));
+  const themed = $$('[data-theme]'), portrait = $('#portrait');
+  function frame(now){
+    const y = scrollY;
+    bar.style.width = (y / (document.documentElement.scrollHeight - innerHeight) * 100) + '%';
+    // nav theme by section under nav
+    let theme = 'dark'; for (const s of themed) { const r = s.getBoundingClientRect(); if (r.top <= 58 && r.bottom > 58) { theme = s.dataset.theme; break; } }
+    nav.classList.toggle('light', theme === 'light' && y > 10); nav.classList.toggle('dark', theme === 'dark' && y > 10);
+    let cur = -1; targets.forEach((t, i) => { if (t.getBoundingClientRect().top < innerHeight * .4) cur = i; });
+    links.forEach((a, i) => a.classList.toggle('active', i === cur));
+    if (!reduce && y < innerHeight) portrait.style.transform = `translateY(${y * .1}px)`;
+    scenes.forEach(([el, fn]) => { const r = el.getBoundingClientRect(); if (r.bottom > -100 && r.top < innerHeight + 100) fn(prog(el), now); });
+    requestAnimationFrame(frame);
+  }
+  scenes.forEach(([el, fn]) => fn(0, performance.now()));
+  requestAnimationFrame(frame);
+
+  /* ---------- Reveal ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold: .15});
+  $$('.rv').forEach(el => io.observe(el));
 })();
 </script>
 </body>
